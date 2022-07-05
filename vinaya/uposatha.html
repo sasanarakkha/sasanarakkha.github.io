@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Uposatha - Bhikkhu Manual</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../assets/stylesheets/output-html.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../titlepage.html">Bhikkhu Manual</a></li><li class="chapter-item expanded affix "><a href="../first-lines.html">List of First Lines</a></li><li class="chapter-item expanded "><a href="../essential-chants.html"><strong aria-hidden="true">1.</strong> Essential Chants</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chants/morning-chanting.html"><strong aria-hidden="true">1.1.</strong> Morning Chanting</a></li><li class="chapter-item expanded "><a href="../chants/evening-chanting.html"><strong aria-hidden="true">1.2.</strong> Evening Chanting</a></li><li class="chapter-item expanded "><a href="../chants/reflections.html"><strong aria-hidden="true">1.3.</strong> Reflections</a></li><li class="chapter-item expanded "><a href="../chants/parittas.html"><strong aria-hidden="true">1.4.</strong> Paritta Chants</a></li><li class="chapter-item expanded "><a href="../chants/anumodana.html"><strong aria-hidden="true">1.5.</strong> Anumodanā</a></li><li class="chapter-item expanded "><a href="../chants/funeral-chants.html"><strong aria-hidden="true">1.6.</strong> Funeral Chants</a></li><li class="chapter-item expanded "><a href="../chants/suttas.html"><strong aria-hidden="true">1.7.</strong> Suttas</a></li><li class="chapter-item expanded "><a href="../chants/patimokkha-chants.html"><strong aria-hidden="true">1.8.</strong> Pāṭimokkha Chants</a></li><li class="chapter-item expanded "><a href="../chants/sri-lanka.html"><strong aria-hidden="true">1.9.</strong> Chants Used in Sri Lanka</a></li></ol></li><li class="chapter-item expanded "><a href="../vinaya-notes.html"><strong aria-hidden="true">2.</strong> Vinaya Notes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../vinaya/guidelines.html"><strong aria-hidden="true">2.1.</strong> Guidelines</a></li><li class="chapter-item expanded "><a href="../vinaya/requisites.html"><strong aria-hidden="true">2.2.</strong> Requisites</a></li><li class="chapter-item expanded "><a href="../vinaya/offences.html"><strong aria-hidden="true">2.3.</strong> Offences</a></li><li class="chapter-item expanded "><a href="../vinaya/uposatha.html" class="active"><strong aria-hidden="true">2.4.</strong> Uposatha</a></li><li class="chapter-item expanded "><a href="../vinaya/rains-and-kathina.html"><strong aria-hidden="true">2.5.</strong> Rains and Kathina</a></li><li class="chapter-item expanded "><a href="../vinaya/other-procedures.html"><strong aria-hidden="true">2.6.</strong> Other Procedures</a></li><li class="chapter-item expanded "><a href="../vinaya/useful-notes.html"><strong aria-hidden="true">2.7.</strong> Useful Notes</a></li></ol></li><li class="chapter-item expanded "><a href="../appendix.html"><strong aria-hidden="true">3.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../pali-phonetics-and-pronunciation.html"><strong aria-hidden="true">3.1.</strong> Pāli Phonetics and Pronunciation</a></li><li class="chapter-item expanded "><a href="../quotations.html"><strong aria-hidden="true">3.2.</strong> Quotations</a></li><li class="chapter-item expanded "><a href="../namo-tassa.html"><strong aria-hidden="true">3.3.</strong> Namo Tassa</a></li></ol></li><li class="chapter-item expanded "><a href="../print-guide.html"><strong aria-hidden="true">4.</strong> Print Guide</a></li><li class="chapter-item expanded "><a href="../copyright.html"><strong aria-hidden="true">5.</strong> Copyright</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Bhikkhu Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="uposatha"><a class="header" href="#uposatha">Uposatha</a></h1>
+<p><strong>Contents</strong></p>
+<ul>
+<li><a href="#parisuddhi">Pārisuddhi-uposatha (Purity Uposatha)</a>
+<ul>
+<li><a href="#before-sangha">Pārisuddhi Before Sangha</a></li>
+<li><a href="#three-bhikkhus">Pārisuddhi for Three Bhikkhus</a></li>
+<li><a href="#two-bhikkhus">Pārisuddhi for Two Bhikkhus</a></li>
+<li><a href="#lone-bhikkhu">Adhiṭṭhānuposatha (For a lone bhikkhu)</a></li>
+</ul>
+</li>
+<li><a href="#sick">Sick Bhikkhus</a>
+<ul>
+<li><a href="#sick-parisuddhi">Pārisuddhi</a></li>
+<li><a href="#chanda">Sending Consent (Chanda)</a></li>
+<li><a href="#parisuddhi-chandha">Pārisuddhi and Chanda</a></li>
+</ul>
+</li>
+<li><a href="#brief">Reciting the Pāṭimokkha in Brief</a></li>
+</ul>
+<h2 id="pārisuddhi-uposatha-purity-uposatha"><a class="header" href="#pārisuddhi-uposatha-purity-uposatha">Pārisuddhi-uposatha (Purity Uposatha)<a id="parisuddhi"></a></a></h2>
+<h3 id="pārisuddhi-before-sangha"><a class="header" href="#pārisuddhi-before-sangha">Pārisuddhi Before Sangha<a id="before-sangha"></a></a></h3>
+<p>Declaring one’s purity before the Sangha:</p>
+<p>‘Parisuddho ahaṃ bhante, parisuddho’ti maṃ saṅgho dhāretu.’</p>
+<p>‘<em>I, ven. sirs, am quite pure (of offences). May the Saṅgha hold me to be pure.</em>’</p>
+<p><em>Vin.I.120-129</em></p>
+<h3 id="pārisuddhi-for-three-bhikkhus"><a class="header" href="#pārisuddhi-for-three-bhikkhus">Pārisuddhi for Three Bhikkhus<a id="three-bhikkhus"></a></a></h3>
+<p>The Pātimokkha requires at least four bhikkhus. If there are only three
+bhikkhus then, after the preliminary duties and the general confession,
+one bhikkhu chants the <em>ñatti</em>:</p>
+<p>‘Suṇantu me bhante āyasmantā ajj’uposatho paṇṇaraso, yad’āyasmantānaṃ
+pattakallaṃ, mayaṃ aññamaññaṃ pārisuddhi uposathaṃ kareyyāma.’</p>
+<p>‘<em>Let the ven. ones listen to me. Today is an Observance day, which is a
+fifteenth (day of the fortnight). If it seems right to the ven. ones let us
+carry out the Observance with one another by way of entire purity.</em>’</p>
+<p>When it is the 14th day:<br />
+‘paṇṇaraso’ → ‘cātuddaso’</p>
+<p>If the announcing bhikkhu is the most senior:<br />
+‘bhante’ → ‘āvuso’</p>
+<p>Then, starting with the senior bhikkhu:</p>
+<p>‘Parisuddho ahaṃ āvuso,<br />
+parisuddho’ti maṃ dhāretha.’ (×3)</p>
+<p>‘<em>I, friends, am quite pure. Understand that I am quite pure.</em>’</p>
+<p>For each of the two junior bhikkhus:<br />
+‘āvuso’ → ‘bhante’</p>
+<h3 id="pārisuddhi-for-two-bhikkhus"><a class="header" href="#pārisuddhi-for-two-bhikkhus">Pārisuddhi for Two Bhikkhus<a id="two-bhikkhus"></a></a></h3>
+<p>Omit the <em>ñatti</em>. The senior bhikkhu declares purity first:</p>
+<p>‘Parisuddho ahaṃ āvuso, parisuddho’ti maṃ dhārehi.’ (×3)</p>
+<p>For the junior:<br />
+‘āvuso’ → ‘bhante’<br />
+‘dhārehi’ → ‘dhāretha’</p>
+<h3 id="adhiṭṭhānuposatha-for-a-lone-bhikkhu"><a class="header" href="#adhiṭṭhānuposatha-for-a-lone-bhikkhu">Adhiṭṭhānuposatha (For a lone bhikkhu)<a id="lone-bhikkhu"></a></a></h3>
+<p>For a bhikkhu staying alone on the Uposatha day. After the preliminary
+duties, he then determines:</p>
+<p>‘Ajja me uposatho.’</p>
+<p>‘<em>Today is an Observance day for me.</em>’</p>
+<h2 id="sick-bhikkhus"><a class="header" href="#sick-bhikkhus">Sick Bhikkhus<a id="sick"></a></a></h2>
+<h3 id="pārisuddhi"><a class="header" href="#pārisuddhi">Pārisuddhi<a id="sick-parisuddhi"></a></a></h3>
+<p><strong>(a)</strong> The sick bhikkhu makes general confession, then:</p>
+<p>‘Pārisuddhiṃ dammi, pārisuddhiṃ me hara, pārisuddhiṃ me ārocehi.’</p>
+<p>‘<em>I give my purity. Please convey purity for me (and) declare purity for me.</em>’</p>
+<p>If the sick bhikkhu is the junior:<br />
+‘hara’ → ‘haratha’<br />
+‘ārocehi’ → ‘ārocetha’</p>
+<p><strong>(b)</strong> The sick bhikkhu’s (e.g. Uttaro’s) purity is conveyed after the
+Pātimokkha:</p>
+<p>’Āyasmā bhante ‘uttaro’ bhikkhu gilāno, parisuddho’ti paṭijāni, parisuddho’ti
+taṃ saṅgho dhāretu.’</p>
+<p>’<em>Ven. sirs, ‘Uttaro Bhikkhu’ who is sick acknowedges that he is pure. May the
+Saṅgha hold him to be pure.</em>’</p>
+<p>If the bhikkhu conveying purity is senior to the sick bhikkhu:</p>
+<p>‘Āyasmā bhante <em>uttaro</em>’ → ‘<em>Uttaro</em> bhante bhikkhu’</p>
+<h3 id="sending-consent-chanda"><a class="header" href="#sending-consent-chanda">Sending Consent (Chanda)<a id="chanda"></a></a></h3>
+<p><strong>(a)</strong> The sick bhikkhu sends his consent to the <em>saṅghakamma</em>:</p>
+<p>‘Chandaṃ dammi, chandaṃ me hara, chandaṃ me ārocehi.’</p>
+<p>‘<em>I offer my consent. May you convey my consent (to the Saṅgha). May you declare
+my consent to them.</em>’</p>
+<p>If the sick bhikkhu is the junior:<br />
+‘hara’ → ‘haratha’<br />
+‘ārocehi’ → ‘ārocetha’</p>
+<p><strong>(b)</strong> Informing the Sangha of the sick bhikkhu’s consent:</p>
+<p>’Āyasmā bhante ‘uttaro’ mayhaṃ chandaṃ adāsi, tassa chando mayā āhaṭo, sādhu
+bhante saṅgho dhāretu.’</p>
+<p>’<em>Ven. sirs, ‘Uttaro Bhikkhu’ has given his consent to me. I have conveyed his
+consent. It is well, ven. sirs, if the Saṅgha holds it to be so.</em>’</p>
+<p>If the bhikkhu conveying consent is senior to the sick bhikkhu:</p>
+<p>‘Āyasmā bhante <em>uttaro</em>’ → ‘<em>Uttaro</em> bhante bhikkhu’</p>
+<h3 id="pārisuddhi-and-chanda"><a class="header" href="#pārisuddhi-and-chanda">Pārisuddhi and Chanda<a id="parisuddhi-chandha"></a></a></h3>
+<p>When both purity and consent are conveyed to the Sangha:</p>
+<p>‘<em>Uttaro</em> bhante bhikkhu gilāno mayhaṃ chandañca pārisuddhiñca adāsi,
+tassa chando ca pārisuddhi ca mayā āhaṭā, sādhu bhante saṅgho dhāretu.’</p>
+<p>’<em>Ven. sirs, ‘Uttaro Bhikkhu’ is sick. He has given his consent and
+purity to me. I have conveyed his consent and purity. It is well, ven.
+sirs, if the Sangha holds it to be so.</em>’</p>
+<h2 id="reciting-the-pāṭimokkha-in-brief"><a class="header" href="#reciting-the-pāṭimokkha-in-brief">Reciting the Pāṭimokkha in Brief<a id="brief"></a></a></h2>
+<p>If there are four or more bhikkhus at the uposatha, but there is an
+obstruction to reciting the Pāṭimokkha in full, it may be recited in
+brief, abbreviating the recited text and announcing the remainder as
+‘heard’ (<em>sutā</em>).</p>
+<p>On the occasions when an abbreviated recitation is necessary, it is
+common practice to recite the Pubbakicca, Nidāna, followed by the
+Pārājika rules, and announce the rest as ‘heard’.</p>
+<p>One may include the Saṅghādisesa and Aniyata rules as well, for a longer
+recitation, or if the situation demands it, there is allowance to
+abbreviate directly after the Nidāna for a shorter recitation.</p>
+<p>If the abbreviation is after the Pārājika rules, the chanter concludes
+with:</p>
+<p>’Uddiṭṭhaṃ kho āyasmanto nidānam.<br />
+Uddiṭṭhā cattāro pārājikā dhammā.<br />
+Sutā terasa saṅghādisesā dhammā.<br />
+Sutā dve aniyatā dhammā.<br />
+Sutā tiṁsa nissaggiyā pācittiyā dhammā.<br />
+Sutā dve-navuti pācittiyā dhammā.<br />
+Sutā cattāro pāṭidesanīyā dhammā.<br />
+Sutā sekhiyā dhammā.<br />
+Sutā sattādhikaraṇa-samathā dhammā.</p>
+<p>Ettakantassa bhagavato suttāgataṃ sutta-pariyāpannaṃ anvaḍḍha-māsaṃ
+uddesaṃ āgacchati. Tattha sabbeh’eva samaggehi sammoda-mānehi
+avivada-mānehi sikkhitabban’ti.</p>
+<p>Bhikkhu-pāṭimokkhaṃ niṭṭhitaṃ.’</p>
+<p><em>Vinaya Mukha Vol 2., p.107</em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../vinaya/offences.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../vinaya/rains-and-kathina.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../vinaya/offences.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../vinaya/rains-and-kathina.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
