@@ -1,0 +1,1579 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Reflections - Bhikkhu Manual</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../assets/stylesheets/output-html.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../titlepage.html">Bhikkhu Manual</a></li><li class="chapter-item expanded affix "><a href="../first-lines.html">List of First Lines</a></li><li class="chapter-item expanded "><a href="../essential-chants.html"><strong aria-hidden="true">1.</strong> Essential Chants</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chants/morning-chanting.html"><strong aria-hidden="true">1.1.</strong> Morning Chanting</a></li><li class="chapter-item expanded "><a href="../chants/evening-chanting.html"><strong aria-hidden="true">1.2.</strong> Evening Chanting</a></li><li class="chapter-item expanded "><a href="../chants/reflections.html" class="active"><strong aria-hidden="true">1.3.</strong> Reflections</a></li><li class="chapter-item expanded "><a href="../chants/parittas.html"><strong aria-hidden="true">1.4.</strong> Paritta Chants</a></li><li class="chapter-item expanded "><a href="../chants/anumodana.html"><strong aria-hidden="true">1.5.</strong> Anumodanā</a></li><li class="chapter-item expanded "><a href="../chants/funeral-chants.html"><strong aria-hidden="true">1.6.</strong> Funeral Chants</a></li><li class="chapter-item expanded "><a href="../chants/suttas.html"><strong aria-hidden="true">1.7.</strong> Suttas</a></li><li class="chapter-item expanded "><a href="../chants/patimokkha-chants.html"><strong aria-hidden="true">1.8.</strong> Pāṭimokkha Chants</a></li><li class="chapter-item expanded "><a href="../chants/sri-lanka.html"><strong aria-hidden="true">1.9.</strong> Chants Used in Sri Lanka</a></li></ol></li><li class="chapter-item expanded "><a href="../vinaya-notes.html"><strong aria-hidden="true">2.</strong> Vinaya Notes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../vinaya/guidelines.html"><strong aria-hidden="true">2.1.</strong> Guidelines</a></li><li class="chapter-item expanded "><a href="../vinaya/requisites.html"><strong aria-hidden="true">2.2.</strong> Requisites</a></li><li class="chapter-item expanded "><a href="../vinaya/offences.html"><strong aria-hidden="true">2.3.</strong> Offences</a></li><li class="chapter-item expanded "><a href="../vinaya/uposatha.html"><strong aria-hidden="true">2.4.</strong> Uposatha</a></li><li class="chapter-item expanded "><a href="../vinaya/rains-and-kathina.html"><strong aria-hidden="true">2.5.</strong> Rains and Kathina</a></li><li class="chapter-item expanded "><a href="../vinaya/other-procedures.html"><strong aria-hidden="true">2.6.</strong> Other Procedures</a></li><li class="chapter-item expanded "><a href="../vinaya/useful-notes.html"><strong aria-hidden="true">2.7.</strong> Useful Notes</a></li></ol></li><li class="chapter-item expanded "><a href="../appendix.html"><strong aria-hidden="true">3.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../pali-phonetics-and-pronunciation.html"><strong aria-hidden="true">3.1.</strong> Pāli Phonetics and Pronunciation</a></li><li class="chapter-item expanded "><a href="../quotations.html"><strong aria-hidden="true">3.2.</strong> Quotations</a></li><li class="chapter-item expanded "><a href="../namo-tassa.html"><strong aria-hidden="true">3.3.</strong> Namo Tassa</a></li></ol></li><li class="chapter-item expanded "><a href="../print-guide.html"><strong aria-hidden="true">4.</strong> Print Guide</a></li><li class="chapter-item expanded "><a href="../copyright.html"><strong aria-hidden="true">5.</strong> Copyright</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Bhikkhu Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="reflections"><a class="header" href="#reflections">Reflections</a></h1>
+<p><strong>Contents</strong></p>
+<ul>
+<li><a href="#patisankha-yoniso">Reflection on the Four Requisites</a></li>
+<li><a href="#jara-dhammomhi">Five Subjects for Frequent Recollection</a></li>
+<li><a href="#dasa-ime-bhikkhave">Ten Subjects for Frequent Recollection</a></li>
+<li><a href="#caturappamanna">Caturappamaññā-obhāsana</a>
+<ul>
+<li><a href="#suffusion">Suffusion With the Divine Abidings</a></li>
+</ul>
+</li>
+<li><a href="#recollection-after">Recollection After Using the Requisites</a></li>
+<li><a href="#off-putting">Reflection on the Off-Putting Qualities of the Requisites</a></li>
+<li><a href="#mettapharana">Mettāpharaṇa</a>
+<ul>
+<li><a href="#universal">Reflection on Universal Well-Being</a></li>
+</ul>
+</li>
+<li><a href="#unconditioned">Reflection on the Unconditioned</a></li>
+<li><a href="#thirty-two">Reflection on the Thirty-Two Parts</a></li>
+<li><a href="#sabba-patti">Sabba-patti-dāna-gāthā</a></li>
+<li><a href="#imina-punna">Uddissanādhiṭṭhāna-gāthā</a>
+<ul>
+<li><a href="#sharing">Verses of Sharing and Aspiration</a></li>
+</ul>
+</li>
+<li><a href="#sabbe-satta">Sabbe sattā sadā hontu</a></li>
+<li><a href="#ti-loka">Ti-loka-vijaya-rāja-patti-dāna-gāthā</a></li>
+<li><a href="#striving">The Teaching on Striving According to Dhamma</a></li>
+<li><a href="#dedication">Dedication of Merit to the Devas and Others</a>
+<ul>
+<li><a href="#pasanna-hontu">Pasannā hontu sabbe pi</a></li>
+</ul>
+</li>
+<li><a href="#friends">Verses on Friends</a></li>
+<li><a href="#impermanence">Reflection on Impermanence</a></li>
+<li><a href="#guardian">The Guardian Meditations</a></li>
+<li><a href="#yan-dani">Yan-dāni me kataṃ puññaṃ</a></li>
+</ul>
+<h2 id="reflection-on-the-four-requisites"><a class="header" href="#reflection-on-the-four-requisites">Reflection on the Four Requisites<a id="patisankha-yoniso"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ taṅkhaṇika-paccavekkhaṇa-pāṭhaṃ bhaṇāmase]</p>
+</blockquote>
+<p>[Paṭisaṅkhā] yoniso cīvaraṃ paṭisevāmi,<br />
+yāvadeva sītassa paṭighātāya, uṇhassa paṭighātāya,<br />
+ḍaṃsa-makasa-vātātapa-siriṃsapa-samphassānaṃ<br />
+paṭighātāya, yāvadeva hirikopina-paṭicchādanatthaṃ</p>
+<div class="english">
+<blockquote>
+<p>Wisely reflecting, I use the robe: only to ward off cold, to ward off heat, to
+ward off the touch of flies, mosquitoes, wind, burning and creeping things,
+only for the sake of modesty.</p>
+</blockquote>
+</div>
+<p>[Paṭisaṅkhā] yoniso piṇḍapātaṃ paṭisevāmi, neva davāya, na madāya, na maṇḍanāya,
+na vibhūsanāya, yāvadeva imassa kāyassa ṭhitiyā, yāpanāya, vihiṃsūparatiyā,
+brahmacariyānuggahāya, iti purāṇañca vedanaṃ paṭihaṅkhāmi, navañca vedanaṃ na
+uppādessāmi, yātrā ca me bhavissati anavajjatā ca phāsuvihāro cā’ti</p>
+<div class="english">
+<blockquote>
+<p>Wisely reflecting, I use almsfood: not for fun, not for pleasure, not for
+fattening, not for beautification, only for the maintenance and nourishment of
+this body, for keeping it healthy, for helping with the Holy Life; thinking
+thus, ‘I will allay hunger without overeating, so that I may continue to live
+blamelessly and at ease.’</p>
+</blockquote>
+</div>
+<p>[Paṭisaṅkhā] yoniso senāsanaṃ paṭisevāmi,<br />
+yāvadeva sītassa paṭighātāya, uṇhassa paṭighātāya,<br />
+ḍaṃsa-makasa-vātātapa-siriṃsapa-samphassānaṃ<br />
+paṭighātāya, yāvadeva utuparissaya vinodanaṃ paṭisallānārāmatthaṃ</p>
+<div class="english">
+<blockquote>
+<p>Wisely reflecting, I use the lodging: only to ward off cold, to ward off heat,
+to ward off the touch of flies, mosquitoes, wind, burning and creeping things,
+only to remove the danger from weather, and for living in seclusion.</p>
+</blockquote>
+</div>
+<p>[Paṭisaṅkhā] yoniso gilāna-paccaya-bhesajja-parikkhāraṃ paṭisevāmi, yāvadeva
+uppannānaṃ veyyābādhikānaṃ vedanānaṃ paṭighātāya, abyāpajjha-paramatāyā’ti</p>
+<div class="english">
+<blockquote>
+<p>Wisely reflecting, I use supports for the sick and medicinal requisites: only
+to ward off painful feelings that have arisen, for the maximum freedom from
+disease.</p>
+</blockquote>
+</div>
+<p><em>M.I.10</em></p>
+<h2 id="five-subjects-for-frequent-recollection"><a class="header" href="#five-subjects-for-frequent-recollection">Five Subjects for Frequent Recollection<a id="jara-dhammomhi"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ abhiṇha-paccavekkhaṇa-pāṭhaṃ bhaṇāmase]</p>
+</blockquote>
+<div class="instr">
+<blockquote>
+<p>(Men Chant)</p>
+</blockquote>
+</div>
+<p>[Jarā-dhammomhi] jaraṃ anatīto</p>
+<div class="english">
+<blockquote>
+<p>I am of the nature to age, I have not gone beyond ageing.</p>
+</blockquote>
+</div>
+<p>Byādhi-dhammomhi byādhiṃ anatīto</p>
+<div class="english">
+<blockquote>
+<p>I am of the nature to sicken, I have not gone beyond sickness.</p>
+</blockquote>
+</div>
+<p>Maraṇa-dhammomhi maraṇaṃ anatīto</p>
+<div class="english">
+<blockquote>
+<p>I am of the nature to die, I have not gone beyond dying.</p>
+</blockquote>
+</div>
+<p>Sabbehi me piyehi manāpehi nānābhāvo vinābhāvo</p>
+<div class="english">
+<blockquote>
+<p>All that is mine, beloved and pleasing,<br />
+will become otherwise, will become separated from me.</p>
+</blockquote>
+</div>
+<p>Kammassakomhi kammadāyādo kammayoni kammabandhu kammapaṭisaraṇo<br />
+Yaṃ kammaṃ karissāmi, kalyāṇaṃ vā pāpakaṃ vā, tassa dāyādo bhavissāmi</p>
+<div class="english">
+<blockquote>
+<p>I am the owner of my kamma, heir to my kamma, born of my kamma, related to my
+kamma, abide supported by my kamma. Whatever kamma I shall do, for good or for
+ill, of that I will be the heir.</p>
+</blockquote>
+</div>
+<p>Evaṃ amhehi abhiṇhaṃ paccavekkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>Thus we should frequently recollect.</p>
+</blockquote>
+</div>
+<div class="instr">
+<blockquote>
+<p>(Women Chant)</p>
+</blockquote>
+</div>
+<p>[Jarā-dhammāmhi] jaraṃ anatītā</p>
+<div class="english">
+<blockquote>
+<p>I am of the nature to age, I have not gone beyond ageing.</p>
+</blockquote>
+</div>
+<p>Byādhi-dhammāmhi byādhiṃ anatītā</p>
+<div class="english">
+<blockquote>
+<p>I am of the nature to sicken, I have not gone beyond sickness.</p>
+</blockquote>
+</div>
+<p>Maraṇa-dhammāmhi maraṇaṃ anatītā</p>
+<div class="english">
+<blockquote>
+<p>I am of the nature to die, I have not gone beyond dying.</p>
+</blockquote>
+</div>
+<p>Sabbehi me piyehi manāpehi nānābhāvo vinābhāvo</p>
+<div class="english">
+<blockquote>
+<p>All that is mine, beloved and pleasing,<br />
+will become otherwise, will become separated from me.</p>
+</blockquote>
+</div>
+<p>Kammassakāmhi kammadāyādā kammayoni kammabandhu kammapaṭisaraṇā<br />
+Yaṃ kammaṃ karissāmi, kalyāṇaṃ vā pāpakaṃ vā, tassa dāyādā bhavissāmi</p>
+<div class="english">
+<blockquote>
+<p>I am the owner of my kamma, heir to my kamma, born of my kamma, related to my
+kamma, abide supported by my kamma. Whatever kamma I shall do, for good or for
+ill, of that I will be the heir.</p>
+</blockquote>
+</div>
+<p>Evaṃ amhehi abhiṇhaṃ paccavekkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>Thus we should frequently recollect.</p>
+</blockquote>
+</div>
+<p><em>A.III.71</em></p>
+<h2 id="ten-subjects-for-frequent-recollection"><a class="header" href="#ten-subjects-for-frequent-recollection">Ten Subjects for Frequent Recollection<a id="dasa-ime-bhikkhave"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ pabbajita-abhiṇha-paccavekkhaṇa-pāṭhaṃ bhaṇāmase]</p>
+</blockquote>
+<p>[Dasa ime bhikkhave] dhammā pabbajitena abhiṇhaṃ paccavekkhitabbā, katame dasa</p>
+<div class="english">
+<blockquote>
+<p>Bhikkhus, there are ten dhammas which should be reflected upon, again and again,
+by one who has gone forth. What are these ten?</p>
+</blockquote>
+</div>
+<p>Vevaṇṇiyamhi ajjhūpagato’ti pabbajitena abhiṇhaṃ paccavekkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>‘I am no longer living according to worldly aims and values.’<br />
+This should be reflected upon, again and again,<br />
+by one who has gone forth.</p>
+</blockquote>
+</div>
+<p>Parapaṭibaddhā me jīvikā’ti pabbajitena abhiṇhaṃ paccavekkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>‘My very life is sustained through the gifts of others.’<br />
+This should be reflected upon, again and again,<br />
+by one who has gone forth.</p>
+</blockquote>
+</div>
+<p>Añño me ākappo karaṇīyo’ti pabbajitena abhiṇhaṃ paccavekkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>‘I should strive to abandon my former habits.’<br />
+This should be reflected upon, again and again,<br />
+by one who has gone forth.</p>
+</blockquote>
+</div>
+<p>Kacci nu kho me attā sīlato na upavadatī’ti pabbajitena abhiṇhaṃ paccavekkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>‘Does regret over my conduct arise in my mind?’<br />
+This should be reflected upon, again and again,<br />
+by one who has gone forth.</p>
+</blockquote>
+</div>
+<p>Kacci nu kho maṃ anuvicca viññū sabrahmacārī sīlato na upavadantī’ti pabbajitena abhiṇhaṃ paccavekkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>‘Could my spiritual companions find fault with my conduct?’<br />
+This should be reflected upon, again and again,<br />
+by one who has gone forth.</p>
+</blockquote>
+</div>
+<p>Sabbehi me piyehi manāpehi nānābhāvo vinābhāvo’ti pabbajitena abhiṇhaṃ paccavekkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>‘All that is mine, beloved and pleasing, will become otherwise, will become separated from me.’<br />
+This should be reflected upon, again and again,<br />
+by one who has gone forth.</p>
+</blockquote>
+</div>
+<p>Kammassakomhi kammadāyādo kammayoni kammabandhu kammapaṭisaraṇo, yaṃ kammaṃ karissāmi, kalyāṇaṃ vā pāpakaṃ vā, tassa dāyādo bhavissāmī’ti pabbajitena abhiṇhaṃ paccavekkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>‘I am the owner of my kamma, heir to my kamma, born of my kamma,<br />
+related to my kamma, abide supported by my kamma; whatever kamma I shall do, for good or for ill, of that I will be the heir.’<br />
+This should be reflected upon, again and again,<br />
+by one who has gone forth.</p>
+</blockquote>
+</div>
+<p>’Kathambhūtassa me rattindivā vītipatantī’ti pabbajitena abhiṇhaṃ paccavekkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>‘The days and nights are relentlessly passing; how well am I spending my time?’<br />
+This should be reflected upon, again and again,<br />
+by one who has gone forth.</p>
+</blockquote>
+</div>
+<p>Kacci nu kho’haṃ suññāgāre abhiramāmī’ti pabbajitena abhiṇhaṃ paccavekkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>‘Do I delight in solitude or not?’<br />
+This should be reflected upon, again and again,<br />
+by one who has gone forth.</p>
+</blockquote>
+</div>
+<p>Atthi nu kho me uttari-manussa-dhammā alamariya-ñāṇa-dassana-viseso adhigato, so’haṃ pacchime kāle sabrahmacārīhi puṭṭho na maṅku bhavissāmī’ti pabbajitena abhiṇhaṃ paccavekkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>‘Has my practice borne fruit with freedom or insight so that at the end of my life I need not feel ashamed when questioned by my spiritual companions?’<br />
+This should be reflected upon, again and again,<br />
+by one who has gone forth.</p>
+</blockquote>
+</div>
+<p>Ime kho bhikkhave dasa dhammā pabbajitena abhiṇhaṃ paccavekkhitabbā’ti</p>
+<div class="english">
+<blockquote>
+<p>Bhikkhus, these are the ten dhammas to be reflected upon, again and again, by one who has gone forth.</p>
+</blockquote>
+</div>
+<p><em>A.V.87</em></p>
+<h2 id="caturappamaññā-obhāsana"><a class="header" href="#caturappamaññā-obhāsana">Caturappamaññā-obhāsana<a id="caturappamanna"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ caturappamaññā-obhāsanaṃ karomase]</p>
+</blockquote>
+<p>[Mettā-sahagatena] cetasā ekaṃ disaṃ pharitvā viharati<br />
+Tathā dutiyaṃ tathā tatiyaṃ tathā catutthaṃ<br />
+Iti uddhamadho tiriyaṃ sabbadhi sabbattatāya<br />
+Sabbāvantaṃ lokaṃ mettā-sahagatena cetasā<br />
+Vipulena mahaggatena appamāṇena averena<br />
+abyāpajjhena pharitvā viharati</p>
+<p>Karuṇā-sahagatena cetasā ekaṃ disaṃ pharitvā viharati<br />
+Tathā dutiyaṃ tathā tatiyaṃ tathā catutthaṃ<br />
+Iti uddhamadho tiriyaṃ sabbadhi sabbattatāya<br />
+Sabbāvantaṃ lokaṃ karuṇā-sahagatena cetasā<br />
+Vipulena mahaggatena appamāṇena averena<br />
+abyāpajjhena pharitvā viharati</p>
+<p>Muditā-sahagatena cetasā ekaṃ disaṃ pharitvā viharati<br />
+Tathā dutiyaṃ tathā tatiyaṃ tathā catutthaṃ<br />
+Iti uddhamadho tiriyaṃ sabbadhi sabbattatāya<br />
+Sabbāvantaṃ lokaṃ muditā-sahagatena cetasā<br />
+Vipulena mahaggatena appamāṇena averena<br />
+abyāpajjhena pharitvā viharati</p>
+<p>Upekkhā-sahagatena cetasā ekaṃ disaṃ pharitvā viharati<br />
+Tathā dutiyaṃ tathā tatiyaṃ tathā catutthaṃ<br />
+Iti uddhamadho tiriyaṃ sabbadhi sabbattatāya<br />
+Sabbāvantaṃ lokaṃ upekkhā-sahagatena cetasā<br />
+Vipulena mahaggatena appamāṇena averena<br />
+abyāpajjhena pharitvā viharatī’ti</p>
+<p><em>D.I.251</em></p>
+<h3 id="suffusion-with-the-divine-abidings"><a class="header" href="#suffusion-with-the-divine-abidings">Suffusion With the Divine Abidings<a id="suffusion"></a></a></h3>
+<blockquote>
+<p>[Now let us make the Four Boundless Qualities shine forth.]</p>
+</blockquote>
+<p>[I will abide] pervading one quarter<br />
+with a heart imbued with loving-kindness;<br />
+Likewise the second, likewise the third,<br />
+likewise the fourth;<br />
+So above and below, around and everywhere;<br />
+and to all as to myself.<br />
+I will abide pervading the all-encompassing<br />
+world with a heart imbued with loving-kindness;<br />
+abundant, exalted, immeasurable, without hostility,<br />
+and without ill-will.</p>
+<p>I will abide pervading one quarter<br />
+with a heart imbued with compassion;<br />
+Likewise the second, likewise the third,<br />
+likewise the fourth;<br />
+So above and below, around and everywhere;<br />
+and to all as to myself.<br />
+I will abide pervading the all-encompassing<br />
+world with a heart imbued with compassion;<br />
+abundant, exalted, immeasurable, without hostility,<br />
+and without ill-will.</p>
+<p>I will abide pervading one quarter<br />
+with a heart imbued with gladness;<br />
+Likewise the second, likewise the third,<br />
+likewise the fourth;<br />
+So above and below, around and everywhere;<br />
+and to all as to myself.<br />
+I will abide pervading the all-encompassing<br />
+world with a heart imbued with gladness;<br />
+abundant, exalted, immeasurable, without hostility,<br />
+and without ill-will.</p>
+<p>I will abide pervading one quarter<br />
+with a heart imbued with equanimity;<br />
+Likewise the second, likewise the third,<br />
+likewise the fourth;<br />
+So above and below, around and everywhere;<br />
+and to all as to myself.<br />
+I will abide pervading the all-encompassing<br />
+world with a heart imbued with equanimity;<br />
+abundant, exalted, immeasurable, without hostility,<br />
+and without ill-will.</p>
+<h2 id="recollection-after-using-the-requisites"><a class="header" href="#recollection-after-using-the-requisites">Recollection After Using the Requisites<a id="recollection-after"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ atīta-paccavekkhaṇa-pāṭhaṃ bhaṇāmase]</p>
+</blockquote>
+<p>Ajja mayā apaccavekkhitvā yaṃ cīvaraṃ paribhuttaṃ, taṃ yāvadeva sītassa
+paṭighātāya, uṇhassa paṭighātāya, ḍaṃsa-makasa-vātātapa-siriṃsapa-samphassānaṃ
+paṭighātāya, yāvadeva hirikopina paṭicchādan’atthaṃ.</p>
+<div class="english">
+<blockquote>
+<p>Whatever robe I used today without consideration, was only to ward off cold,
+to ward off heat, to ward off the touch of flies, mosquitoes, wind, burning
+and creeping things, only for the sake of modesty.</p>
+</blockquote>
+</div>
+<p>Ajja mayā apaccavekkhitvā yo piṇḍapāto paribhutto, so n’eva davāya, na madāya,
+na maṇḍanāya, na vibhūsanāya, yāvad-eva imassa kāyassa ṭhitiyā, yāpanāya,
+vihiṃsūparatiyā, brahmacariyānuggahāya, iti purāṇañca vedanaṃ paṭihaṅkhāmi,
+navañca vedanaṃ na uppādessāmi, yātrā ca me bhavissati anavajjatā ca phāsuvihāro
+cā’ti.</p>
+<div class="english">
+<blockquote>
+<p>Whatever alms-food I used today without consideration, was not for fun, not
+for pleasure, not for fattening, not for beautification, only for the
+maintenance and nourishment of this body, for keeping it healthy, for helping
+with the Holy Life; thinking thus, ‘I will allay hunger without overeating, so
+that I may continue to live blamelessly and at ease.’</p>
+</blockquote>
+</div>
+<p>Ajja mayā apaccavekkhitvā yaṃ senāsanaṃ paribhuttaṃ, taṃ yāvadeva sītassa
+paṭighātāya, uṇhassa paṭighātāya, ḍaṃsa-makasa-vātātapa-siriṃsapa-samphassānaṃ
+paṭighātāya, yāvadeva utuparissaya vinodanaṃ paṭisallānārāmatthaṃ.</p>
+<div class="english">
+<blockquote>
+<p>Whatever lodging I used today without consideration, was only to ward off
+cold, to ward off heat, to ward off the touch of flies, mosquitoes, wind,
+burning and creeping things, only to remove the danger from weather, and for
+living in seclusion.</p>
+</blockquote>
+</div>
+<p>Ajja mayā apaccavekkhitvā yo gilāna-paccayabhesajja-parikkhāro paribhutto, so
+yāvadeva uppannānaṃ veyyābādhikānaṃ vedanānaṃ paṭighātāya,
+abyāpajjha-paramatāyā’ti.</p>
+<div class="english">
+<blockquote>
+<p>Whatever medicinal requisite for supporting the sick I used today without
+consideration, was only to ward off painful feelings that have arisen, for the
+maximum freedom from disease.</p>
+</blockquote>
+</div>
+<p><em>M.I.10</em></p>
+<h2 id="reflection-on-the-off-putting-qualities-of-the-requisites"><a class="header" href="#reflection-on-the-off-putting-qualities-of-the-requisites">Reflection on the Off-Putting Qualities of the Requisites<a id="off-putting"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ dhātu-paṭikūla-paccavekkhaṇa-pāṭhaṃ bhaṇāmase]</p>
+</blockquote>
+<p>[Yathā paccayaṃ] pavattamānaṃ dhātu-mattam-ev’etaṃ</p>
+<div class="english">
+<blockquote>
+<p>Composed of only elements according to causes and conditions</p>
+</blockquote>
+</div>
+<p>Yad idaṃ cīvaraṃ tad upabhuñjako ca puggalo</p>
+<div class="english">
+<blockquote>
+<p>Are these robes and so is the person wearing them;</p>
+</blockquote>
+</div>
+<p>Dhātu-mattako, nissatto, nijjīvo, suñño</p>
+<div class="english">
+<blockquote>
+<p>Merely elements, not a being, without a soul, and empty of self.</p>
+</blockquote>
+</div>
+<p>Sabbāni pana imāni cīvarāni ajigucchanīyāni</p>
+<div class="english">
+<blockquote>
+<p>None of these robes are innately repulsive</p>
+</blockquote>
+</div>
+<p>Imaṃ pūti-kāyaṃ patvā, ativiya jigucchanīyāni jāyanti</p>
+<div class="english">
+<blockquote>
+<p>But touching this unclean body, they become disgusting indeed.</p>
+</blockquote>
+</div>
+<p>Yathā paccayaṃ pavattamānaṃ dhātu-mattam-ev’etaṃ</p>
+<div class="english">
+<blockquote>
+<p>Composed of only elements according to causes and conditions</p>
+</blockquote>
+</div>
+<p>Yad idaṃ piṇḍapāto tad upabhuñjako ca puggalo</p>
+<div class="english">
+<blockquote>
+<p>Is this almsfood and so is the person eating it;</p>
+</blockquote>
+</div>
+<p>Dhātu-mattako, nissatto, nijjīvo, suñño</p>
+<div class="english">
+<blockquote>
+<p>Merely elements, not a being, without a soul, and empty of self.</p>
+</blockquote>
+</div>
+<p>Sabbo panāyaṃ piṇḍapāto ajigucchanīyo</p>
+<div class="english">
+<blockquote>
+<p>None of this almsfood is innately repulsive</p>
+</blockquote>
+</div>
+<p>Imaṃ pūti-kāyaṃ patvā, ativiya jigucchanīyo jāyati</p>
+<div class="english">
+<blockquote>
+<p>But touching this unclean body, it becomes disgusting indeed.</p>
+</blockquote>
+</div>
+<p>Yathā paccayaṃ pavattamānaṃ dhātu-mattam-ev’etaṃ</p>
+<div class="english">
+<blockquote>
+<p>Composed of only elements according to causes and conditions</p>
+</blockquote>
+</div>
+<p>Yad idaṃ senāsanaṃ tad upabhuñjako ca puggalo</p>
+<div class="english">
+<blockquote>
+<p>Is this dwelling and so is the person using it;</p>
+</blockquote>
+</div>
+<p>Dhātu-mattako, nissatto, nijjīvo, suñño</p>
+<div class="english">
+<blockquote>
+<p>Merely elements, not a being, without a soul, and empty of self.</p>
+</blockquote>
+</div>
+<p>Sabbāni pana imāni senāsanāni ajigucchanīyāni</p>
+<div class="english">
+<blockquote>
+<p>None of these dwellings are innately repulsive</p>
+</blockquote>
+</div>
+<p>Imaṃ pūti-kāyaṃ patvā, ativiya jigucchanīyāni jāyanti</p>
+<div class="english">
+<blockquote>
+<p>But touching this unclean body, they become disgusting indeed.</p>
+</blockquote>
+</div>
+<p>Yathā paccayaṃ pavattamānaṃ dhātu-mattam-ev’etaṃ</p>
+<div class="english">
+<blockquote>
+<p>Composed of only elements according to causes and conditions</p>
+</blockquote>
+</div>
+<p>Yad idaṃ gilāna-paccaya-bhesajja-parikkhāro tad upabhuñjako ca puggalo</p>
+<div class="english">
+<blockquote>
+<p>Is this medicinal requisite and so is the person that takes it;</p>
+</blockquote>
+</div>
+<p>Dhātu-mattako, nissatto, nijjīvo, suñño</p>
+<div class="english">
+<blockquote>
+<p>Merely elements, not a being, without a soul, and empty of self.</p>
+</blockquote>
+</div>
+<p>Sabbo panāyaṃ gilāna-paccaya-bhesajja-parikkhāro ajigucchanīyo</p>
+<div class="english">
+<blockquote>
+<p>None of this medicinal requisite is innately repulsive</p>
+</blockquote>
+</div>
+<p>Imaṃ pūti-kāyaṃ patvā, ativiya jigucchanīyo jāyati</p>
+<div class="english">
+<blockquote>
+<p>But touching this unclean body, it becomes disgusting indeed.</p>
+</blockquote>
+</div>
+<h2 id="mettāpharaṇa"><a class="header" href="#mettāpharaṇa">Mettāpharaṇa<a id="mettapharana"></a></a></h2>
+<blockquote>
+<p>[Handa mayam mettāpharaṇaṃ karomase]</p>
+</blockquote>
+<p>[Ahaṃ sukhito homi] niddukkho homi, avero homi, abyāpajjho homi, anīgho homi,
+sukhī attānaṃ pariharāmi</p>
+<p>Sabbe sattā sukhitā hontu, sabbe sattā averā hontu, sabbe sattā abyāpajjhā
+hontu, sabbe sattā anīghā hontu, sabbe sattā sukhī attānaṃ pariharantu</p>
+<p>Sabbe sattā sabbadukkhā pamuccantu</p>
+<p>Sabbe sattā laddha-sampattito mā vigacchantu</p>
+<p>Sabbe sattā kammassakā kammadāyādā kammayonī kammabandhū kammapaṭisaraṇā,
+yaṃ kammaṃ karissanti, kalyāṇaṃ vā pāpakaṃ vā, tassa dāyādā bhavissanti</p>
+<p><em>M.I.288; A.V.88</em></p>
+<h3 id="reflection-on-universal-well-being"><a class="header" href="#reflection-on-universal-well-being">Reflection on Universal Well-Being<a id="universal"></a></a></h3>
+<blockquote>
+<p>[Now let us chant the reflections on universal well-being]</p>
+</blockquote>
+<p>[May I abide in well-being,]<br />
+In freedom from affliction,<br />
+In freedom from hostility,<br />
+In freedom from ill-will,<br />
+In freedom from anxiety,<br />
+And may I maintain well-being in myself.</p>
+<p>May everyone abide in well-being,<br />
+In freedom from hostility,<br />
+In freedom from ill-will,<br />
+In freedom from anxiety, and may they<br />
+Maintain well-being in themselves.</p>
+<p>May all beings be released from all suffering.</p>
+<p>And may they not be parted from the good fortune<br />
+they have attained.</p>
+<p>When they act upon intention,<br />
+All beings are the owners of their action<br />
+and inherit its results.<br />
+Their future is born from such action,<br />
+companion to such action,<br />
+And its results will be their home.</p>
+<p>All actions with intention,<br />
+Be they skilful or harmful –<br />
+Of such acts they will be the heirs.</p>
+<p><em>M.I.288; A.V.88</em></p>
+<h2 id="reflection-on-the-unconditioned"><a class="header" href="#reflection-on-the-unconditioned">Reflection on the Unconditioned<a id="unconditioned"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ nibbāna-sutta-pāṭhaṃ bhaṇāmase]</p>
+</blockquote>
+<p>Atthi bhikkhave ajātaṃ abhūtaṃ akataṃ asaṅkhataṃ</p>
+<div class="english">
+<blockquote>
+<p>There is an Unborn, Unoriginated, Uncreated and Unformed.</p>
+</blockquote>
+</div>
+<p>No cetaṃ bhikkhave abhavissa ajātaṃ abhūtaṃ akataṃ asaṅkhataṃ</p>
+<div class="english">
+<blockquote>
+<p>If there was not this Unborn, this Unoriginated, this Uncreated, this Unformed,</p>
+</blockquote>
+</div>
+<p>Na yidaṃ jātassa bhūtassa katassa saṅkhatassa nissaraṇaṃ paññāyetha</p>
+<div class="english">
+<blockquote>
+<p>Freedom from the world of the born, the originated, the created, the formed would not be possible.</p>
+</blockquote>
+</div>
+<p>Yasmā ca kho bhikkhave atthi ajātaṃ abhūtaṃ akataṃ asaṅkhataṃ</p>
+<div class="english">
+<blockquote>
+<p>But since there is an Unborn, Unoriginated, Uncreated and Unformed,</p>
+</blockquote>
+</div>
+<p>Tasmā jātassa bhūtassa katassa saṅkhatassa nissaraṇaṃ paññāyati</p>
+<div class="english">
+<blockquote>
+<p>Therefore is freedom possible from the world of the born, the originated, the created and the formed.</p>
+</blockquote>
+</div>
+<p><em>Ud.8.3</em></p>
+<h2 id="reflection-on-the-thirty-two-parts"><a class="header" href="#reflection-on-the-thirty-two-parts">Reflection on the Thirty-Two Parts<a id="thirty-two"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ dvattiṃsākāra-pāṭhaṃ bhaṇāmase]</p>
+</blockquote>
+<p>[Ayaṃ kho] me kāyo uddhaṃ pādatalā adho kesamatthakā<br />
+tacapariyanto pūro nānappakārassa asucino</p>
+<div class="english">
+<blockquote>
+<p>This, which is my body, from the soles of the feet up, and down from the crown of the head, is a sealed bag of skin filled with unattractive things.</p>
+</blockquote>
+</div>
+<p>Atthi imasmiṃ kāye</p>
+<div class="english">
+<blockquote>
+<p>In this body there are:</p>
+</blockquote>
+</div>
+<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<tr><td>kesā</td><td><em>hair of the head</em></td></tr>
+<tr><td>lomā</td><td><em>hair of the body</em></td></tr>
+<tr><td>nakhā</td><td><em>nails</em></td></tr>
+<tr><td>dantā</td><td><em>teeth</em></td></tr>
+<tr><td>taco</td><td><em>skin</em></td></tr>
+<tr><td>maṃsaṃ</td><td><em>flesh</em></td></tr>
+<tr><td>nahārū</td><td><em>sinews</em></td></tr>
+<tr><td>aṭṭhī</td><td><em>bones</em></td></tr>
+<tr><td>aṭṭhimiñjaṃ</td><td><em>bone marrow</em></td></tr>
+<tr><td>vakkaṃ</td><td><em>kidneys</em></td></tr>
+<tr><td>hadayaṃ</td><td><em>heart</em></td></tr>
+<tr><td>yakanaṃ</td><td><em>liver</em></td></tr>
+<tr><td>kilomakaṃ</td><td><em>membranes</em></td></tr>
+<tr><td>pihakaṃ</td><td><em>spleen</em></td></tr>
+<tr><td>papphāsaṃ</td><td><em>lungs</em></td></tr>
+<tr><td>antaṃ</td><td><em>bowels</em></td></tr>
+<tr><td>antaguṇaṃ</td><td><em>entrails</em></td></tr>
+<tr><td>udariyaṃ</td><td><em>undigested food</em></td></tr>
+<tr><td>karīsaṃ</td><td><em>excrement</em></td></tr>
+<tr><td>pittaṃ</td><td><em>bile</em></td></tr>
+<tr><td>semhaṃ</td><td><em>phlegm</em></td></tr>
+<tr><td>pubbo</td><td><em>pus</em></td></tr>
+<tr><td>lohitaṃ</td><td><em>blood</em></td></tr>
+<tr><td>sedo</td><td><em>sweat</em></td></tr>
+<tr><td>medo</td><td><em>fat</em></td></tr>
+<tr><td>assu</td><td><em>tears</em></td></tr>
+<tr><td>vasā</td><td><em>grease</em></td></tr>
+<tr><td>kheḷo</td><td><em>spittle</em></td></tr>
+<tr><td>siṅghāṇikā</td><td><em>mucus</em></td></tr>
+<tr><td>lasikā</td><td><em>oil of the joints</em></td></tr>
+<tr><td>muttaṃ</td><td><em>urine</em></td></tr>
+<tr><td>matthaluṅgan’ti</td><td><em>brain</em></td></tr>
+</tbody></table>
+<p>Evam-ayaṃ me kāyo uddhaṃ pādatalā adho kesamatthakā<br />
+tacapariyanto pūro nānappakārassa asucino</p>
+<div class="english">
+<blockquote>
+<p>This, then, which is my body, from the soles of the feet up, and down from the crown of the head, is a sealed bag of skin filled with unattractive things.</p>
+</blockquote>
+</div>
+<p><em>M.I.57</em></p>
+<h2 id="sabba-patti-dāna-gāthā"><a class="header" href="#sabba-patti-dāna-gāthā">Sabba-patti-dāna-gāthā<a id="sabba-patti"></a></a></h2>
+<p><em>Verses on the Sharing of Merit</em></p>
+<blockquote>
+<p>[Handa mayaṃ sabba-patti-dāna-gāthāyo bhaṇāmase]</p>
+</blockquote>
+<p>Puññass’idāni katassa<br />
+Yān’aññāni katāni me<br />
+Tesañca bhāgino hontu<br />
+Sattānantāppamāṇakā</p>
+<div class="english">
+<blockquote>
+<p>May whatever living beings,<br />
+Without measure, without end,<br />
+Partake of all the merit,<br />
+From the good deeds I have done:</p>
+</blockquote>
+</div>
+<p>Ye piyā guṇavantā ca<br />
+Mayhaṃ mātā-pitādayo<br />
+Diṭṭhā me cāpyadiṭṭhā vā<br />
+Aññe majjhatta-verino</p>
+<div class="english">
+<blockquote>
+<p>Those loved and full of goodness,<br />
+My mother and my father dear,<br />
+Beings seen by me and those unseen,<br />
+Those neutral and averse,</p>
+</blockquote>
+</div>
+<p>Sattā tiṭṭhanti lokasmiṃ<br />
+Te bhummā catu-yonikā<br />
+Pañc’eka-catu-vokārā<br />
+Saṃsarantā bhavābhave</p>
+<div class="english">
+<blockquote>
+<p>Beings established in the world,<br />
+From the three planes and four grounds of birth,<br />
+With five aggregates or one or four,<br />
+Wand’ring on from realm to realm,</p>
+</blockquote>
+</div>
+<p>Ñātaṃ ye patti-dānam-me<br />
+Anumodantu te sayaṃ<br />
+Ye c’imaṃ nappajānanti<br />
+Devā tesaṃ nivedayuṃ</p>
+<div class="english">
+<blockquote>
+<p>Those who know my act of dedication,<br />
+May they all rejoice in it,<br />
+And as for those yet unaware,<br />
+May the devas let them know.</p>
+</blockquote>
+</div>
+<p>Mayā dinnāna-puññānaṃ anumodana-hetunā<br />
+Sabbe sattā sadā hontu<br />
+Averā sukha-jīvino<br />
+Khemappadañca pappontu<br />
+Tesāsā sijjhataṃ subhā</p>
+<div class="english">
+<blockquote>
+<p>By rejoicing in my sharing,<br />
+May all beings live at ease,<br />
+In freedom from hostility,<br />
+May their good wishes be fulfilled,<br />
+And may they all reach safety.</p>
+</blockquote>
+</div>
+<h2 id="uddissanādhiṭṭhāna-gāthā"><a class="header" href="#uddissanādhiṭṭhāna-gāthā">Uddissanādhiṭṭhāna-gāthā<a id="imina-punna"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ uddissanādhiṭṭhāna-gāthāyo bhaṇāmase]</p>
+</blockquote>
+<p>[Iminā puññakammena] upajjhāyā guṇuttarā<br />
+Ācariyūpakārā ca mātāpitā ca ñātakā<br />
+Suriyo candimā rājā guṇavantā narāpi ca<br />
+Brahma-mārā ca indā ca lokapālā ca devatā<br />
+Yamo mittā manussā ca majjhattā verikāpi ca<br />
+Sabbe sattā sukhī hontu puññāni pakatāni me<br />
+Sukhañca tividhaṃ dentu khippaṃ pāpetha vomataṃ<br />
+Iminā puññakammena iminā uddissena ca<br />
+Khipp’āhaṃ sulabhe ceva taṇhūpādāna-chedanaṃ<br />
+Ye santāne hīnā dhammā yāva nibbānato mamaṃ<br />
+Nassantu sabbadā yeva yattha jāto bhave bhave<br />
+Ujucittaṃ satipaññā sallekho viriyamhinā<br />
+Mārā labhantu nokāsaṃ kātuñca viriyesu me<br />
+Buddhādhipavaro nātho dhammo nātho varuttamo<br />
+Nātho paccekabuddho ca saṅgho nāthottaro mamaṃ<br />
+Tesottamānubhāvena mārokāsaṃ labhantu mā<br />
+[Dasapuññānubhāvena mārokāsaṃ labhantu mā]</p>
+<div class="instr">
+<blockquote>
+<p>(This chant is a short excerpt from a longer composition. Some monasteries include the last line in brackets.)</p>
+</blockquote>
+</div>
+<h3 id="verses-of-sharing-and-aspiration"><a class="header" href="#verses-of-sharing-and-aspiration">Verses of Sharing and Aspiration<a id="sharing"></a></a></h3>
+<blockquote>
+<p>[Now let us chant the verses of sharing and aspiration]</p>
+</blockquote>
+<p>Through the goodness that arises from my practice,<br />
+May my spiritual teachers and guides of great virtue,<br />
+My mother, my father, and my relatives,<br />
+The Sun and the Moon, and all virtuous<br />
+<span class="vin"> </span>leaders of the world,<br />
+May the highest gods and evil forces,<br />
+Celestial beings, guardian spirits of the Earth,<br />
+<span class="vin"> </span>and the Lord of Death,<br />
+May those who are friendly, indifferent, or hostile,<br />
+May all beings receive the blessings of my life,<br />
+May they soon attain the threefold bliss<br />
+<span class="vin"> </span>and realize the Deathless.<br />
+Through the goodness that arises from my practice,<br />
+And through this act of sharing,<br />
+May all desires and attachments quickly cease<br />
+And all harmful states of mind.<br />
+Until I realize Nibbāna,<br />
+In every kind of birth, may I have an upright mind,<br />
+With mindfulness and wisdom, austerity and vigour.<br />
+May the forces of delusion not take hold<br />
+<span class="vin"> </span>nor weaken my resolve.<br />
+The Buddha is my excellent refuge,<br />
+Unsurpassed is the protection of the Dhamma,<br />
+The Solitary Buddha is my noble guide,<br />
+The Saṅgha is my supreme support.<br />
+Through the supreme power of all these,<br />
+May darkness and delusion be dispelled.<br />
+[By the power of the ten merits,<br />
+May Māra gain no opening.]</p>
+<h2 id="sabbe-sattā-sadā-hontu"><a class="header" href="#sabbe-sattā-sadā-hontu">Sabbe sattā sadā hontu<a id="sabbe-satta"></a></a></h2>
+<p>Sabbe sattā sadā hontu<br />
+Averā sukha-jīvino<br />
+Kataṃ puñña-phalaṃ mayhaṃ<br />
+Sabbe bhāgī bhavantu te</p>
+<div class="english">
+<blockquote>
+<p>May all beings always live happily, free from animosity.<br />
+May all share in the blessings springing from the good I have done.</p>
+</blockquote>
+</div>
+<h2 id="ti-loka-vijaya-rāja-patti-dāna-gāthā"><a class="header" href="#ti-loka-vijaya-rāja-patti-dāna-gāthā">Ti-loka-vijaya-rāja-patti-dāna-gāthā<a id="ti-loka"></a></a></h2>
+<p>Yaṅ kiñci kusalaṃ kammaṃ<br />
+<span class="vin"> </span>kattabbaṃ kiriyaṃ mama<br />
+Kāyena vācā manasā<br />
+<span class="vin"> </span>ti-dase sugataṃ kataṃ<br />
+Ye sattā saññino atthi<br />
+<span class="vin"> </span>ye ca sattā asaññino<br />
+Kataṃ puñña-phalaṃ mayhaṃ<br />
+<span class="vin"> </span>sabbe bhāgī bhavantu te<br />
+Ye taṃ kataṃ suviditaṃ<br />
+<span class="vin"> </span>dinnaṃ puñña-phalaṃ mayā<br />
+Ye ca tattha na jānanti<br />
+<span class="vin"> </span>devā gantvā nivedayuṃ<br />
+Sabbe lokamhi ye sattā<br />
+<span class="vin"> </span>jīvant’āhāra-hetukā<br />
+Manuññaṃ bhojanaṃ sabbe<br />
+<span class="vin"> </span>labhantu mama cetasā.</p>
+<p><em>Apadāna 4</em></p>
+<h2 id="the-teaching-on-striving-according-to-dhamma"><a class="header" href="#the-teaching-on-striving-according-to-dhamma">The Teaching on Striving According to Dhamma<a id="striving"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ dhamma-pahaṃsāna-pāṭham bhaṇāmase]</p>
+</blockquote>
+<p>Evaṃ svākkhāto bhikkhave mayā dhammo</p>
+<div class="english">
+<blockquote>
+<p>Bhikkhus, the Dhamma has thus been well expounded by me,</p>
+</blockquote>
+</div>
+<p>Uttāno</p>
+<div class="english">
+<blockquote>
+<p>Elucidated,</p>
+</blockquote>
+</div>
+<p>Vivaṭo</p>
+<div class="english">
+<blockquote>
+<p>Disclosed,</p>
+</blockquote>
+</div>
+<p>Pakāsito</p>
+<div class="english">
+<blockquote>
+<p>Revealed,</p>
+</blockquote>
+</div>
+<p>Chinna-pilotiko</p>
+<div class="english">
+<blockquote>
+<p>And stripped of patchwork –</p>
+</blockquote>
+</div>
+<p>Alam-eva saddhā-pabbajitena kula-puttena vīriyaṃ ārabhituṃ</p>
+<div class="english">
+<blockquote>
+<p>This is enough for a clansman, who has gone forth out of faith,
+to arouse his energy thus:</p>
+</blockquote>
+</div>
+<p>Kāmaṃ taco ca nahāru ca aṭṭhi ca avasissatu</p>
+<div class="english">
+<blockquote>
+<p>’Willingly let only my skin, sinews and bones remain,</p>
+</blockquote>
+</div>
+<p>Sarīre upasussatu maṃsa-lohitaṃ</p>
+<div class="english">
+<blockquote>
+<p>And let the flesh and blood in this body wither away.</p>
+</blockquote>
+</div>
+<p>Yaṃ taṃ</p>
+<div class="english">
+<blockquote>
+<p>As long as whatever is to be attained</p>
+</blockquote>
+</div>
+<p>Purisa-thāmena</p>
+<div class="english">
+<blockquote>
+<p>By human strength,</p>
+</blockquote>
+</div>
+<p>Purisa-vīriyena</p>
+<div class="english">
+<blockquote>
+<p>By human energy,</p>
+</blockquote>
+</div>
+<p>Purisa-parakkamena</p>
+<div class="english">
+<blockquote>
+<p>By human effort,</p>
+</blockquote>
+</div>
+<p>Pattabbaṃ na taṃ apāpuṇitvā</p>
+<div class="english">
+<blockquote>
+<p>Has not been attained,</p>
+</blockquote>
+</div>
+<p>Vīriyassa saṇṭhānaṃ bhavissatī’ti</p>
+<div class="english">
+<blockquote>
+<p>Let not my efforts stand still.’</p>
+</blockquote>
+</div>
+<p>Dukkhaṃ bhikkhave kusīto viharati</p>
+<div class="english">
+<blockquote>
+<p>Bhikkhus, the lazy person dwells in suffering,</p>
+</blockquote>
+</div>
+<p>Vokiṇṇo pāpakehi akusalehi dhammehi</p>
+<div class="english">
+<blockquote>
+<p>Soiled by evil, unwholesome states</p>
+</blockquote>
+</div>
+<p>Mahantañca sadatthaṃ parihāpeti</p>
+<div class="english">
+<blockquote>
+<p>And great is the personal good that he neglects.</p>
+</blockquote>
+</div>
+<p>Āraddha-vīriyo ca kho bhikkhave sukhaṃ viharati</p>
+<div class="english">
+<blockquote>
+<p>The energetic person though dwells happily,</p>
+</blockquote>
+</div>
+<p>Pavivitto pāpakehi akusalehi dhammehi</p>
+<div class="english">
+<blockquote>
+<p>Well withdrawn from unwholesome states</p>
+</blockquote>
+</div>
+<p>Mahantañca sadatthaṃ paripūreti</p>
+<div class="english">
+<blockquote>
+<p>And great is the personal good that he achieves.</p>
+</blockquote>
+</div>
+<p>Na bhikkhave hīnena aggassa patti hoti</p>
+<div class="english">
+<blockquote>
+<p>Bhikkhus, it is not by lower means that the supreme is attained</p>
+</blockquote>
+</div>
+<p>Aggena ca kho bhikkhave aggassa patti hoti</p>
+<div class="english">
+<blockquote>
+<p>But, bhikkhus, it is by the supreme that the supreme is attained.</p>
+</blockquote>
+</div>
+<p>Maṇḍapeyyam-idaṃ bhikkhave brahmacariyaṃ</p>
+<div class="english">
+<blockquote>
+<p>Bhikkhus, this holy life is like the cream of the milk:</p>
+</blockquote>
+</div>
+<p>Satthā sammukhī-bhūto</p>
+<div class="english">
+<blockquote>
+<p>The Teacher is present,</p>
+</blockquote>
+</div>
+<p>Tasmātiha bhikkhave vīriyaṃ ārabhatha</p>
+<div class="english">
+<blockquote>
+<p>Therefore, bhikkhus, start to arouse your energy</p>
+</blockquote>
+</div>
+<p>Appattassa pattiyā</p>
+<div class="english">
+<blockquote>
+<p>For the attainment of the as yet unattained,</p>
+</blockquote>
+</div>
+<p>Anadhigatassa adhigamāya</p>
+<div class="english">
+<blockquote>
+<p>For the achievement of the as yet unachieved,</p>
+</blockquote>
+</div>
+<p>Asacchikatassa sacchikiriyāya</p>
+<div class="english">
+<blockquote>
+<p>For the realization of the as yet unrealized.</p>
+</blockquote>
+</div>
+<p>Evaṃ no ayaṃ amhākaṃ pabbajjā avaṅkatā avañjhā bhavissati</p>
+<div class="english">
+<blockquote>
+<p>Thinking, in such a way: ’Our Going Forth will not be barren</p>
+</blockquote>
+</div>
+<p>Saphalā sa-udrayā</p>
+<div class="english">
+<blockquote>
+<p>But will become fruitful and fertile,</p>
+</blockquote>
+</div>
+<p>Yesaṃ mayaṃ paribhuñjāma cīvara-piṇḍapāta-senāsana-<br />
+gilānappaccaya-bhesajja-parikkhāraṃ tesaṃ te kārā amhesu</p>
+<div class="english">
+<blockquote>
+<p>And all our use of robes, almsfood, lodgings, and medicinal
+requisites, given by others for our support,</p>
+</blockquote>
+</div>
+<p>Mahapphalā bhavissanti mahānisaṃsā’ti</p>
+<div class="english">
+<blockquote>
+<p>Will reward them with great fruit and great benefit.’</p>
+</blockquote>
+</div>
+<p>Evaṃ hi vo bhikkhave sikkhitabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>Bhikkhus, you should train yourselves thus:</p>
+</blockquote>
+</div>
+<p>Att’atthaṃ vā hi bhikkhave sampassamānena</p>
+<div class="english">
+<blockquote>
+<p>Considering your own good,</p>
+</blockquote>
+</div>
+<p>Alam-eva appamādena sampādetuṃ</p>
+<div class="english">
+<blockquote>
+<p>It is enough to strive for the goal without negligence;</p>
+</blockquote>
+</div>
+<p>Par’atthaṃ vā hi bhikkhave sampassamānena</p>
+<div class="english">
+<blockquote>
+<p>Bhikkhus, considering the good of others,</p>
+</blockquote>
+</div>
+<p>Alam-eva appamādena sampādetuṃ</p>
+<div class="english">
+<blockquote>
+<p>It is enough to strive for the goal without negligence;</p>
+</blockquote>
+</div>
+<p>Ubhay’atthaṃ vā hi bhikkhave sampassamānena</p>
+<div class="english">
+<blockquote>
+<p>Bhikkhus, considering the good of both,</p>
+</blockquote>
+</div>
+<p>Alam-eva appamādena sampādetun’ti</p>
+<div class="english">
+<blockquote>
+<p>It is enough to strive for the goal without negligence.</p>
+</blockquote>
+</div>
+<h2 id="dedication-of-merit-to-the-devas-and-others"><a class="header" href="#dedication-of-merit-to-the-devas-and-others">Dedication of Merit to the Devas and Others<a id="dedication"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ patti-dāna-gāthāyo bhaṇāmase]</p>
+</blockquote>
+<p>Yā devatā santi vihāra-vāsinī<br />
+Thūpe ghare bodhi-ghare tahiṃ tahiṃ<br />
+Tā dhamma-dānena bhavantu pūjitā<br />
+Sotthiṃ karonte’dha vihāra-maṇḍale.</p>
+<div class="english">
+<blockquote>
+<p>May the devas dwelling in the temple,<br />
+the stupa, the buildings, the Bodhi-tree enclosure, here and there,<br />
+be honored with the gift of Dhamma.<br />
+May they bring about well-being here in the monastery.</p>
+</blockquote>
+</div>
+<p>Therā ca majjhā navakā ca bhikkhavo<br />
+Sārāmikā dāna-patī upāsakā<br />
+Gāmā ca desā nigamā ca issarā<br />
+Sappāṇa-bhūtā sukhitā bhavantu te.</p>
+<div class="english">
+<blockquote>
+<p>May elder, intermediat, and new monks,<br />
+temple attendants, donors, lay followers;<br />
+towns, cities, and principalities,<br />
+with their beings and spirits be happy.</p>
+</blockquote>
+</div>
+<p>Jalābu-jā ye pi ca aṇḍa-sambhavā<br />
+Saṃseda-jātā atha-v-opapātikā<br />
+Niyyānikaṃ dhamma-varaṃ paṭicca te<br />
+Sabbe pi dukkhassa karontu saṅkhayaṃ.</p>
+<div class="english">
+<blockquote>
+<p>Whether born from a womb, from an egg,<br />
+from moisture, or spontaneously arising:<br />
+May they, in dependence on the foremost Dhamma for leading out,<br />
+all make an end to suffering and stress.</p>
+</blockquote>
+</div>
+<p>Ṭhātu ciraṃ sataṃ dhammo<br />
+Dhamma-dharā ca puggalā<br />
+Saṅgho hotu samaggo va<br />
+Atthāya ca hitāya ca<br />
+Amhe rakkhatu saddhammo<br />
+Sabbe pi dhamma-cārino<br />
+Vuḍḍhiṃ sampāpuṇeyyāma<br />
+Dhamme ariyappavedite.</p>
+<div class="english">
+<blockquote>
+<p>May the Dhamma stand firm for long,<br />
+along with those individuals who maintain it.<br />
+May the Sangha live in harmony, for our welfare and benefit.<br />
+May the true Dhamma protect us,<br />
+together with all who practise the Dhamma.<br />
+May we flourish in the Dhamma taught by the noble ones.</p>
+</blockquote>
+</div>
+<h3 id="pasannā-hontu-sabbe-pi"><a class="header" href="#pasannā-hontu-sabbe-pi">Pasannā hontu sabbe pi<a id="pasanna-hontu"></a></a></h3>
+<p>Pasannā hontu sabbe pi<br />
+Pāṇino Buddha-sāsane.<br />
+Sammā-dhāraṃ pavecchanto<br />
+Kāle devo pavassatu.<br />
+Vuḍḍhi-bhāvāya sattānaṃ<br />
+Samiddhaṃ netu medaniṃ.<br />
+Mātā-pitā ca atra-jaṃ<br />
+Niccaṃ rakkhanti puttakaṃ.<br />
+Evaṃ dhammena rājāno<br />
+Pajaṃ rakkhantu sabbadā.</p>
+<h2 id="verses-on-friends"><a class="header" href="#verses-on-friends">Verses on Friends<a id="friends"></a></a></h2>
+<p>Aññadatthu haro mitto<br />
+Yo ca mitto vacī-paramo,<br />
+Anupiyañ-ca yo āhu,<br />
+Apāyesu ca yo sakhā:<br />
+Ete amitte cattāro iti viññāya paṇḍito<br />
+Ārakā parivajjeyya<br />
+Maggaṃ paṭibhayaṃ yathā.</p>
+<div class="english">
+<blockquote>
+<p>One who makes friends only to cheat them,<br />
+one who is good only in word,<br />
+one who merely flatters you,<br />
+and a companion in ruinous fun:<br />
+These four the wise know as non-friends.<br />
+Avoid them from afar,<br />
+like a dangerous road.</p>
+</blockquote>
+</div>
+<p>Upakāro ca yo mitto,<br />
+Sukha-dukkho ca yo sakhā,<br />
+Atthakkhāyī ca yo mitto,<br />
+Yo ca mittānukampako:<br />
+Etepi mitte cattāro iti viññāya paṇḍito.<br />
+Sakkaccaṃ payirupāseyya,<br />
+Mātā puttaṃ va orasaṃ.</p>
+<div class="english">
+<blockquote>
+<p>A friend who is helpful,<br />
+one who shares in your sorrows and joys,<br />
+one who points you to worthwhile things,<br />
+one sympathetic to friends:<br />
+These four; the wise know as true friends.<br />
+Attend to them earnestly,<br />
+as a mother her child.</p>
+</blockquote>
+</div>
+<h2 id="reflection-on-impermanence"><a class="header" href="#reflection-on-impermanence">Reflection on Impermanence<a id="impermanence"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ aniccānussati-pāṭhaṃ bhaṇāmase]</p>
+</blockquote>
+<p>[Sabbe saṅkhārā aniccā]</p>
+<div class="english">
+<blockquote>
+<p>All conditioned things are impermanent;</p>
+</blockquote>
+</div>
+<p>Sabbe saṅkhārā dukkhā</p>
+<div class="english">
+<blockquote>
+<p>All conditioned things are dukkha;</p>
+</blockquote>
+</div>
+<p>Sabbe dhammā anattā</p>
+<div class="english">
+<blockquote>
+<p>Everything is void of self.</p>
+</blockquote>
+</div>
+<p>Addhuvaṃ jīvitaṃ</p>
+<div class="english">
+<blockquote>
+<p>Life is not for sure;</p>
+</blockquote>
+</div>
+<p>Dhuvaṃ maraṇaṃ</p>
+<div class="english">
+<blockquote>
+<p>Death is for sure;</p>
+</blockquote>
+</div>
+<p>Avassaṃ mayā maritabbaṃ</p>
+<div class="english">
+<blockquote>
+<p>It is inevitable that I’ll die;</p>
+</blockquote>
+</div>
+<p>Maraṇa-pariyosānaṃ me jīvitaṃ</p>
+<div class="english">
+<blockquote>
+<p>Death is the culmination of my life;</p>
+</blockquote>
+</div>
+<p>Jīvitaṃ me aniyataṃ</p>
+<div class="english">
+<blockquote>
+<p>My life is uncertain;</p>
+</blockquote>
+</div>
+<p>Maraṇaṃ me niyataṃ</p>
+<div class="english">
+<blockquote>
+<p>My death is certain.</p>
+</blockquote>
+</div>
+<p>Vata</p>
+<div class="english">
+<blockquote>
+<p>Indeed,</p>
+</blockquote>
+</div>
+<p>Ayaṃ kāyo</p>
+<div class="english">
+<blockquote>
+<p>This body</p>
+</blockquote>
+</div>
+<p>Aciraṃ</p>
+<div class="english">
+<blockquote>
+<p>Will soon</p>
+</blockquote>
+</div>
+<p>Apeta-viññāṇo</p>
+<div class="english">
+<blockquote>
+<p>Be void of consciousness</p>
+</blockquote>
+</div>
+<p>Chuddho</p>
+<div class="english">
+<blockquote>
+<p>And cast away.</p>
+</blockquote>
+</div>
+<p>Adhisessati</p>
+<div class="english">
+<blockquote>
+<p>It will lie</p>
+</blockquote>
+</div>
+<p>Paṭhaviṃ</p>
+<div class="english">
+<blockquote>
+<p>On the ground</p>
+</blockquote>
+</div>
+<p>Kaliṅgaraṃ iva</p>
+<div class="english">
+<blockquote>
+<p>Just like a rotten log,</p>
+</blockquote>
+</div>
+<p>Niratthaṃ</p>
+<div class="english">
+<blockquote>
+<p>Completely void of use.</p>
+</blockquote>
+</div>
+<p>Aniccā vata saṅkhārā</p>
+<div class="english">
+<blockquote>
+<p>Truly conditioned things cannot last,</p>
+</blockquote>
+</div>
+<p>Uppāda-vaya-dhammino</p>
+<div class="english">
+<blockquote>
+<p>Their nature is to rise and fall,</p>
+</blockquote>
+</div>
+<p>Uppajjitvā nirujjhanti</p>
+<div class="english">
+<blockquote>
+<p>Having arisen things must cease,</p>
+</blockquote>
+</div>
+<p>Tesaṃ vūpasamo sukho</p>
+<div class="english">
+<blockquote>
+<p>Their stilling is true happiness.</p>
+</blockquote>
+</div>
+<h2 id="the-guardian-meditations"><a class="header" href="#the-guardian-meditations">The Guardian Meditations<a id="guardian"></a></a></h2>
+<blockquote>
+<p>[Handa mayaṃ catur’ārakkhā-kammaṭṭhāna-pāṭhaṃ bhaṇāmase]</p>
+</blockquote>
+<p>Buddhānussati mettā ca<br />
+Asubhaṃ maraṇassati<br />
+Iccimā catur’ārakkhā<br />
+Kātabbā ca vipassanā.</p>
+<div class="english">
+<blockquote>
+<p>These four meditations – recollection of the Buddha,<br />
+good-will, the foulness of the body, and mindfulness of death –<br />
+are guardians and means of insight that should be done.</p>
+</blockquote>
+</div>
+<p>Visuddha-dhamma-santāno<br />
+Anuttarāya bodhiyā<br />
+Yogato ca pabodhā ca<br />
+Buddho Buddho’ti ñāyate.</p>
+<div class="english">
+<blockquote>
+<p>Endowed with pure qualities through his unexcelled Awakening,<br />
+and from training others to awaken,<br />
+he is known as the Awakened One.</p>
+</blockquote>
+</div>
+<p>Narānara-tiracchāna-<br />
+bhedā sattā sukhesino,<br />
+Sabbe pi sukhino hontu<br />
+Sukhitattā ca khemino.</p>
+<div class="english">
+<blockquote>
+<p>All living beings – human, non-human, and animal – who are searching<br />
+for happiness: May they all be happy and,<br />
+through their happiness, secure.</p>
+</blockquote>
+</div>
+<p>Kesa-lomādi-chavānaṃ<br />
+Ayam’eva samussayo<br />
+Kāyo sabbo pi jeguccho<br />
+Vaṇṇādito paṭikkulo.</p>
+<div class="english">
+<blockquote>
+<p>This conglomeration of things from dead bodies, like hair of<br />
+the head and hair of the body: The body as a whole is<br />
+disgusting and, in terms of such things as its colours, unclean.</p>
+</blockquote>
+</div>
+<p>Jīvit’indriy’upaccheda-<br />
+saṅkhāta-maraṇaṃ siyā<br />
+Sabbesaṃ pīdha pāṇīnaṃ<br />
+Tañ-hi dhuvaṃ na jīvitaṃ.</p>
+<div class="english">
+<blockquote>
+<p>Death, the destruction of the faculty of life, will come to all beings.<br />
+That is certain, but life is not.</p>
+</blockquote>
+</div>
+<h2 id="yan-dāni-me-kataṃ-puññaṃ"><a class="header" href="#yan-dāni-me-kataṃ-puññaṃ">Yan-dāni me kataṃ puññaṃ<a id="yan-dani"></a></a></h2>
+<p>Yan-dāni me kataṃ puññaṃ<br />
+<span class="vin"></span>tenānen’uddisena ca,<br />
+Khippaṃ sacchikareyyāhaṃ<br />
+<span class="vin"></span>dhamme lok’uttare nava.<br />
+Sace tāva abhabbo’haṃ<br />
+<span class="vin"></span>saṃsāre pana saṃsaraṃ,<br />
+Niyato bodhi-satto va<br />
+<span class="vin"></span>sambuddhena viyākato.<br />
+Nāṭṭhārasa pi abhabba<br />
+<span class="vin"></span>ṭhānāni pāpuṇeyy’ahaṃ.<br />
+Manussattañ-ca liṅgañ-ca<br />
+<span class="vin"></span>pabbajjañ-c’upasampadaṃ.<br />
+Labhitvā pesalo sīlī<br />
+<span class="vin"></span>dhāreyyaṃ satthu sāsanaṃ,<br />
+Sukhā-paṭipado khippābhiñño<br />
+<span class="vin"></span>sacchikareyyahaṃ.<br />
+Arahatta-phalaṃ aggaṃ<br />
+<span class="vin"></span>vijj’ādi-guṇ’alaṅ-kataṃ,<br />
+Yadi n’uppajjati Buddho<br />
+<span class="vin"></span>kammaṃ paripūrañ-ca me,<br />
+Evaṃ sante labheyyāhaṃ<br />
+<span class="vin"></span>pacceka-bodhim-uttaman-ti.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chants/evening-chanting.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../chants/parittas.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chants/evening-chanting.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../chants/parittas.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
