@@ -1,0 +1,558 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chants Used in Sri Lanka - Bhikkhu Manual</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../assets/stylesheets/output-html.css">
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../titlepage.html">Bhikkhu Manual</a></li><li class="chapter-item expanded affix "><a href="../first-lines.html">List of First Lines</a></li><li class="chapter-item expanded "><a href="../essential-chants.html"><strong aria-hidden="true">1.</strong> Essential Chants</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../chants/morning-chanting.html"><strong aria-hidden="true">1.1.</strong> Morning Chanting</a></li><li class="chapter-item expanded "><a href="../chants/evening-chanting.html"><strong aria-hidden="true">1.2.</strong> Evening Chanting</a></li><li class="chapter-item expanded "><a href="../chants/reflections.html"><strong aria-hidden="true">1.3.</strong> Reflections</a></li><li class="chapter-item expanded "><a href="../chants/parittas.html"><strong aria-hidden="true">1.4.</strong> Paritta Chants</a></li><li class="chapter-item expanded "><a href="../chants/anumodana.html"><strong aria-hidden="true">1.5.</strong> Anumodanā</a></li><li class="chapter-item expanded "><a href="../chants/funeral-chants.html"><strong aria-hidden="true">1.6.</strong> Funeral Chants</a></li><li class="chapter-item expanded "><a href="../chants/suttas.html"><strong aria-hidden="true">1.7.</strong> Suttas</a></li><li class="chapter-item expanded "><a href="../chants/patimokkha-chants.html"><strong aria-hidden="true">1.8.</strong> Pāṭimokkha Chants</a></li><li class="chapter-item expanded "><a href="../chants/sri-lanka.html" class="active"><strong aria-hidden="true">1.9.</strong> Chants Used in Sri Lanka</a></li></ol></li><li class="chapter-item expanded "><a href="../vinaya-notes.html"><strong aria-hidden="true">2.</strong> Vinaya Notes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../vinaya/guidelines.html"><strong aria-hidden="true">2.1.</strong> Guidelines</a></li><li class="chapter-item expanded "><a href="../vinaya/requisites.html"><strong aria-hidden="true">2.2.</strong> Requisites</a></li><li class="chapter-item expanded "><a href="../vinaya/offences.html"><strong aria-hidden="true">2.3.</strong> Offences</a></li><li class="chapter-item expanded "><a href="../vinaya/uposatha.html"><strong aria-hidden="true">2.4.</strong> Uposatha</a></li><li class="chapter-item expanded "><a href="../vinaya/rains-and-kathina.html"><strong aria-hidden="true">2.5.</strong> Rains and Kathina</a></li><li class="chapter-item expanded "><a href="../vinaya/other-procedures.html"><strong aria-hidden="true">2.6.</strong> Other Procedures</a></li><li class="chapter-item expanded "><a href="../vinaya/useful-notes.html"><strong aria-hidden="true">2.7.</strong> Useful Notes</a></li></ol></li><li class="chapter-item expanded "><a href="../appendix.html"><strong aria-hidden="true">3.</strong> Appendix</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../pali-phonetics-and-pronunciation.html"><strong aria-hidden="true">3.1.</strong> Pāli Phonetics and Pronunciation</a></li><li class="chapter-item expanded "><a href="../quotations.html"><strong aria-hidden="true">3.2.</strong> Quotations</a></li><li class="chapter-item expanded "><a href="../namo-tassa.html"><strong aria-hidden="true">3.3.</strong> Namo Tassa</a></li></ol></li><li class="chapter-item expanded "><a href="../print-guide.html"><strong aria-hidden="true">4.</strong> Print Guide</a></li><li class="chapter-item expanded "><a href="../copyright.html"><strong aria-hidden="true">5.</strong> Copyright</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Bhikkhu Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chants-used-in-sri-lanka"><a class="header" href="#chants-used-in-sri-lanka">Chants Used in Sri Lanka</a></h1>
+<p><strong>Contents</strong></p>
+<ul>
+<li><a href="#devotional">Devotional Chants</a>
+<ul>
+<li><a href="#three-main-objects">Salutation to the Three Main Objects of Venerations</a></li>
+<li><a href="#bodhi-tree">Salutation to the Bodhi-Tree</a></li>
+<li><a href="#lights">Offering of Lights</a></li>
+<li><a href="#incense">Offering of Incense</a></li>
+<li><a href="#flowers">Offering of Flowers</a></li>
+<li><a href="#merit-to-devas">Transference of Merit to Devas</a></li>
+<li><a href="#the-world">Blessing to the World</a></li>
+<li><a href="#merits-to-departed">Transference of Merits to Departed Ones</a></li>
+<li><a href="#aspirations">The Aspirations</a></li>
+<li><a href="#protection">Blessing and Protection</a></li>
+<li><a href="#bhavana">Mettā Bhāvanā</a></li>
+<li><a href="#pattanumodana">Pattanumodana (Sharing Merits)</a></li>
+</ul>
+</li>
+<li><a href="#offences">Offences</a>
+<ul>
+<li><a href="#confession-of-offences">Āpatti-paṭidesanā (Confession of Offences)</a>
+<ul>
+<li><a href="#light-offences">Method of confessing light offences</a></li>
+<li><a href="#same-base-offences">Formula for same base offences</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#kathina">Rains and Kathina</a>
+<ul>
+<li><a href="#entering">Entering the Rains</a></li>
+</ul>
+</li>
+<li><a href="#uposatha">Uposatha-day for Lay-followers</a>
+<ul>
+<li><a href="#eight-precepts">Eight Precepts</a></li>
+<li><a href="#five-precepts">Five Precepts</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="devotional-chants"><a class="header" href="#devotional-chants">Devotional Chants<a id="devotional"></a></a></h2>
+<h3 id="salutation-to-the-three-main-objects-of-venerations"><a class="header" href="#salutation-to-the-three-main-objects-of-venerations">Salutation to the Three Main Objects of Venerations<a id="three-main-objects"></a></a></h3>
+<p>Vandāmi cetiyaṃ sabbaṃ<br />
+Sabba-ṭhānesu patiṭṭhitaṃ<br />
+Sārīrīka-dhātu-Mahā-bodhiṃ<br />
+Buddha-rūpaṃ sakalaṃ sadā.</p>
+<h3 id="salutation-to-the-bodhi-tree"><a class="header" href="#salutation-to-the-bodhi-tree">Salutation to the Bodhi-Tree<a id="bodhi-tree"></a></a></h3>
+<p>Yassa mūle nissino va<br />
+<span class="vin"></span>sabbāri vijayaṃ akā,<br />
+Patto sabbaññutaṃ Satthā<br />
+<span class="vin"></span>vande taṃ Bodhi-pādapaṃ.<br />
+Ime ete Mahā-Bodhi<br />
+<span class="vin"></span>loka-nāthena pūjitā,<br />
+Aham-pi te namassāmi<br />
+<span class="vin"></span>bodhi-Rājā nam’atthu te!</p>
+<h3 id="offering-of-lights"><a class="header" href="#offering-of-lights">Offering of Lights<a id="lights"></a></a></h3>
+<p>Ghana-sārappadittena<br />
+Dīpena tama-dhaṃsinā<br />
+Tīloka-dīpam sambuddhaṃ<br />
+Pūjayāmi tamo-nudaṃ.</p>
+<h3 id="offering-of-incense"><a class="header" href="#offering-of-incense">Offering of Incense<a id="incense"></a></a></h3>
+<p>Gandha-sambhāra-yuttena<br />
+Dhūpenāhaṃ sugandhinā<br />
+Pūjaye pūjaneyyan-taṃ<br />
+Pūjā-bhājanam-uttamaṃ.</p>
+<h3 id="offering-of-flowers"><a class="header" href="#offering-of-flowers">Offering of Flowers<a id="flowers"></a></a></h3>
+<p>Vaṇṇa-gandha-guṇopetaṃ<br />
+Etaṃ kusuma-santatiṃ.<br />
+Pūjayāmi munindassa<br />
+Sirīpāda-saroruhe.<br />
+Pūjemi Buddhaṃ kusumena’nena<br />
+Puññenam-etena ca hotu mokkhaṃ<br />
+Pupphaṃ milāyāti yathā idaṃ me<br />
+Kāyo tathā yāti vināsa-bhāvaṃ.</p>
+<h3 id="transference-of-merit-to-devas"><a class="header" href="#transference-of-merit-to-devas">Transference of Merit to Devas<a id="merit-to-devas"></a></a></h3>
+<p>Ākāsatthā ca bhummatthā<br />
+Devā nāgā mah’iddhikā<br />
+Puññaṃ taṃ anumoditvā<br />
+Ciraṃ rakkhantu [loka] sāsanaṃ<br />
+Ciraṃ rakkhantu desanaṃ<br />
+Ciraṃ rakkhantu maṃ paraṃ</p>
+<p>Ettāvatā ca amhehi<br />
+Sambhataṃ puñña-sampadaṃ<br />
+Sabbe devā/ bhūtā/ sattā anumodantu<br />
+Sabba-sampatti siddhiyā.</p>
+<h3 id="blessing-to-the-world"><a class="header" href="#blessing-to-the-world">Blessing to the World<a id="the-world"></a></a></h3>
+<p>Devo vassatu kālena<br />
+Sassa-sampatti-hetu ca<br />
+Phīto bhavatu loko ca<br />
+Rajā bhavatu dhammiko.</p>
+<h3 id="transference-of-merits-to-departed-ones"><a class="header" href="#transference-of-merits-to-departed-ones">Transference of Merits to Departed Ones<a id="merits-to-departed"></a></a></h3>
+<p>Idaṃ te/vo/no/me ñātīnaṃ hotu<br />
+sukhitā hontu ñātayo. (×3)</p>
+<div class="instr">
+<blockquote>
+<p>(When chanting for one person use ‘te’; when for laypeople use ‘vo’; when
+chanting together in a group use ‘no’; when alone use ‘me’.)</p>
+</blockquote>
+</div>
+<h3 id="the-aspirations"><a class="header" href="#the-aspirations">The Aspirations<a id="aspirations"></a></a></h3>
+<p>Iminā puññakammena<br />
+<span class="vin"></span>mā me bāla-samāgamo,<br />
+Sataṃ samāgamo hotu,<br />
+<span class="vin"></span>yāva nibbāna-pattiyā.<br />
+Kāyena vācā-cittena<br />
+<span class="vin"></span>pamādena mayā kataṃ<br />
+Accayaṃ khama me bhante<br />
+<span class="vin"></span>bhūri-pañña Tathāgata.</p>
+<h3 id="blessing-and-protection"><a class="header" href="#blessing-and-protection">Blessing and Protection<a id="protection"></a></a></h3>
+<p>Sabb’ītiyo vivajjantu<br />
+<span class="vin"></span>sabba-rogo vinassatu;<br />
+Mā me/no bhavatvantarāyo<br />
+<span class="vin"></span>sukhī dīghāyuko/ā bhava/homa.<br />
+Bhavatu sabba-maṅgalaṃ<br />
+<span class="vin"></span>rakkhantu sabba-devatā.<br />
+Sabba-buddhānubhāvena<br />
+<span class="vin"></span>sadā sotthi bhavantu me.<br />
+Bhavatu sabba-maṅgalaṃ<br />
+<span class="vin"></span>rakkhantu sabba-devatā.<br />
+Sabba-dhammānunbhāvena<br />
+<span class="vin"></span>sadā sotthi bhavantu me.<br />
+Bhavatu sabba-maṅgalaṃ.<br />
+<span class="vin"></span>rakkhantu sabba-devatā.<br />
+Sabba-saṅghānubhāvena,<br />
+<span class="vin"></span>sadā sotthi bhavantu me.<br />
+Nakkhatta-yakkha-bhūtānaṃ<br />
+<span class="vin"></span>pāpaggaha-nivāraṇā<br />
+Parittassānubhāvena<br />
+<span class="vin"></span>hantvā mayhaṃ/amhe upaddave.<br />
+Devo vassatu kālena.<br />
+<span class="vin"></span>sassa-sampatti-hetu ca.<br />
+Phīto bhavatu loko ca.<br />
+<span class="vin"></span>rājā bhavatu dhammiko.<br />
+Sabbe buddhā balappattā,<br />
+<span class="vin"></span>paccekānañca yaṃ balaṃ<br />
+Arahantānañca tejena,<br />
+<span class="vin"></span>rakkhaṃ bandhāmi sabbaso.</p>
+<h3 id="mettā-bhāvanā"><a class="header" href="#mettā-bhāvanā">Mettā Bhāvanā<a id="bhavana"></a></a></h3>
+<p>Attūpamāya sabbesaṃ<br />
+<span class="vin"></span>sattānaṃ sukhakāmataṃ,<br />
+Passitvā kamato mettaṃ<br />
+<span class="vin"></span>sabbasattesu bhāvaye.<br />
+Sukhi bhaveyyaṃ niddukkho<br />
+<span class="vin"></span>ahaṃ niccaṃ ahaṃ viya,<br />
+Hitā ca me sukhī hontu<br />
+<span class="vin"></span>majjhatthā c’atha verino.<br />
+Imamhi gāmakkhettamhi<br />
+<span class="vin"></span>sattā hontu sukhī sadā,<br />
+Tato parañ ca-rajjesu<br />
+<span class="vin"></span>cakkavāḷesu jantuno.<br />
+Samantā cakkavāḷesu<br />
+<span class="vin"></span>sattānan-tesu pāṇino,<br />
+Sukhino puggala bhūtā<br />
+<span class="vin"></span>attabhāvagatā siyuṃ.<br />
+Tathā itthī pumā ce’va<br />
+<span class="vin"></span>ariya anariya’ pi ca,<br />
+Devā narā apāyaṭṭhā<br />
+<span class="vin"></span>tathā dasa disāsu cā-ti.</p>
+<h3 id="pattanumodana-sharing-merits"><a class="header" href="#pattanumodana-sharing-merits">Pattanumodana (Sharing Merits)<a id="pattanumodana"></a></a></h3>
+<p>Idaṃ te/vo/no/me ñātīnaṃ hotu<br />
+Sukhitā hontu ñātayo (×3)</p>
+<p>Yathā vāri-vahā pūrā<br />
+<span class="vin"></span>paripūrenti sāgaraṃ,<br />
+Evaṃ eva ito dinnaṃ<br />
+<span class="vin"></span>petānaṃ upakappatu.<br />
+Unname udakaṃ vattaṃ<br />
+<span class="vin"></span>yathā ninnaṃ pavattati,<br />
+Evaṃ eva ito dinnaṃ<br />
+<span class="vin"></span>petānaṃ upakappatu.<br />
+Āyūr-arogya-sampatti<br />
+<span class="vin"></span>sagga-sampattiṃ eva ca,<br />
+Atho nibbāna-sampatti<br />
+<span class="vin"></span>iminā te/vo/no/me samijjhatu.<br />
+Icchitaṃ patthitaṃ tuyhaṃ<br />
+<span class="vin"></span>sabbam-eva samijjhatu,<br />
+Pūrentu citta-saṅkappā<br />
+<span class="vin"></span>maṇi-joti-raso yathā.<br />
+Icchitaṃ patthitaṃ tuyhaṃ<br />
+<span class="vin"></span>sabbam-eva samijjhatu,<br />
+Pūrentu citta-saṅkappā<br />
+<span class="vin"></span>cando paṇṇa-rasī yathā.<br />
+Icchitaṃ patthitaṃ tuyhaṃ<br />
+<span class="vin"></span>khippam-eva samijjhatu,<br />
+Sabbe pūrentu saṅkappā<br />
+<span class="vin"></span>cando paṇṇa-rasī yathā.</p>
+<p><em>Petavatthu p.19-31 &amp; KhpA. 206-215</em></p>
+<h2 id="offences"><a class="header" href="#offences">Offences<a id="offences"></a></a></h2>
+<h3 id="Āpatti-paṭidesanā-confession-of-offences"><a class="header" href="#Āpatti-paṭidesanā-confession-of-offences">Āpatti-paṭidesanā (Confession of Offences)<a id="confession-of-offences"></a></a></h3>
+<h4 id="method-of-confessing-light-offences"><a class="header" href="#method-of-confessing-light-offences">Method of confessing light offences<a id="light-offences"></a></a></h4>
+<p><strong>JCB:</strong> Junior Confessing Bhikkhu<br />
+<strong>SAB:</strong> Senior Acknowledging Bhikkhu</p>
+<p><strong>JCB:</strong> Okāsa, ahaṃ bhante, sabbā āpattiyo ārocemi.<br />
+Dutiyam-pi ahaṃ bhante, sabbā āpattiyo ārocemi.<br />
+Tatiyam-pi ahaṃ bhante, sabbā āpattiyo ārocemi.</p>
+<p><em>I ven. sir, declare all offences. For the second time… For the third time…</em></p>
+<p><strong>SAB:</strong> Sādhu, sādhu.<br />
+<em>It is good, it is good.</em></p>
+<p><strong>JCB:</strong> Okāsa ahaṃ bhante, sambahulā nānā-vatthukā āpattiyo āpajjiṃ, tā tumha-mūle paṭidesemi.</p>
+<p><em>I, ven. sir, having many times fallen into many different offences with different bases, these I confess.</em></p>
+<p><strong>SAB:</strong> Passasi āvuso tā āpattiyo?<br />
+<em>Do you see, friend, those offences?</em></p>
+<p><strong>JCB:</strong> Āma bhante passāmi.<br />
+<em>Yes, ven. sir, I see.</em></p>
+<p><strong>SAB:</strong> Āyatiṃ āvuso saṃvareyyāsi.<br />
+<em>In the future, friend, you should be restrained.</em></p>
+<p><strong>JCB:</strong> Sādhu suṭṭhu bhante āyatiṃ saṃvarissāmi.<br />
+Dutiyam-pi sādhu suṭṭhu bhante āyatiṃ saṃvarissāmi.<br />
+Tatiyam-pi sādhu suṭṭhu bhante āyatiṃ saṃvarissāmi.</p>
+<p><em>It is well indeed, ven. sir, in future I shall be restrained. For the second time…For the third time…</em></p>
+<p><strong>SAB:</strong> Sādhu, sādhu.<br />
+<em>It is good, it is good.</em></p>
+<p><strong>JCB:</strong> Okāsa ahaṃ bhante,<br />
+sabbā tā garukāpattiyo āvikaromi.<br />
+Dutiyam-pi okāsa ahaṃ bhante,<br />
+sabbā tā garukāpattiyo āvikaromi.<br />
+Tatiyam-pi okāsa ahaṃ bhante,<br />
+sabbā tā garukāpattiyo āvikaromi.</p>
+<p><em>Ven. sir, I reveal all heavy offences. For the second time… For the third time…</em></p>
+<p>This final declaration is only used in some communities. Also, some communities
+will acknowledge with a ‘<em>Sādhu</em>’ after each declaration rather than as shown
+above. That is, after each ‘<em>ārocemi</em>’ and each ‘<em>saṃvarissāmi</em>’.</p>
+<h4 id="formula-for-same-base-offences"><a class="header" href="#formula-for-same-base-offences">Formula for same base offences<a id="same-base-offences"></a></a></h4>
+<p><strong>JCB:</strong> Okāsa ahaṃ bhante, desanādukkaṭāpattiṃ āpajjiṃ, taṃ tumha-mūle paṭidesemi.</p>
+<p><em>I, ven. sir, confess an offence of wrong-doing through having confessed the same-based offences.</em></p>
+<p><strong>SAB:</strong> Passasi āvuso taṃ āpaṭṭiṃ?<br />
+<em>Do you see, friend, that offence?</em></p>
+<p><strong>JCB:</strong> Āma bhante passāmi.<br />
+<em>Yes, ven. sir, I see.</em></p>
+<p><strong>SAB:</strong> Āyatiṃ āvuso saṃvareyyāsi.<br />
+<em>In the future, friend, you should be restrained.</em></p>
+<p><strong>JCB:</strong> Sādhu suṭṭhu bhante āyatiṃ saṃvarissāmi. Dutiyam-pi sādhu suṭṭhu … . Tatiyam-pi … saṃvarissāmi.</p>
+<p><em>It is well indeed, ven. sir, in future I shall be restrained. For the second time… For the third time…</em></p>
+<p><strong>SAB:</strong> Sādhu, sādhu.<br />
+<em>It is good, it is good.</em></p>
+<p><em>Vin.II.102</em></p>
+<h2 id="rains-and-kathina"><a class="header" href="#rains-and-kathina">Rains and Kathina<a id="kathina"></a></a></h2>
+<h3 id="entering-the-rains"><a class="header" href="#entering-the-rains">Entering the Rains<a id="entering"></a></a></h3>
+<p>‘Imasmiṃ vihāre imaṃ te-māsaṃ vassaṃ upemi. Idha vassaṃ upemi.’</p>
+<p>‘<em>I enter the Rains in this kuṭi for three months. I enter the Rains here.</em>’</p>
+<h2 id="uposatha-day-for-lay-followers"><a class="header" href="#uposatha-day-for-lay-followers">Uposatha-day for Lay-followers<a id="uposatha"></a></a></h2>
+<h3 id="eight-precepts"><a class="header" href="#eight-precepts">Eight Precepts<a id="eight-precepts"></a></a></h3>
+<p>With hands in <em>añjali</em>, the laypeople recite the following request:</p>
+<p>‘Sādhu! Sādhu! Sādhu! Okāsa ahaṃ bhante ti-saraṇena saddhiṃ aṭṭh’aṅga
+sīlaṃ dhammaṃ yācāmi, anuggahaṃ katvā sīlaṃ detha me bhante. Dutiyam-pi
+okāsa… detha me bhante. Tatiyam-pi okāsa… detha me bhante.’</p>
+<p><em>Bhk</em>: ‘Yaṃ ahaṃ vadāmi taṃ vadetha.’</p>
+<p><em>Laypeople</em>: ‘Āma, bhante.’</p>
+<p><em>Bhk</em>: ‘Namo…’ (×3)</p>
+<p><em>Laypeople</em>: repeat.</p>
+<p><em>Bhk</em>:</p>
+<p>‘Buddhaṃ saraṇaṃ gacchāmi.<br />
+Dhammaṃ saraṇaṃ gacchāmi.<br />
+Saṅghaṃ saraṇaṃ gacchāmi.<br />
+Dutiyam-pi Buddhaṃ saraṇaṃ gacchāmi.<br />
+Dutiyam-pi Dhammaṃ saraṇaṃ gacchāmi.<br />
+Dutiyam-pi Saṅghaṃ saraṇaṃ gacchāmi.<br />
+Tatiyam-pi Buddhaṃ saraṇaṃ gacchāmi.<br />
+Tatiyam-pi Dhammaṃ saraṇaṃ gacchāmi.<br />
+Tatiyam-pi Saṅghaṃ saraṇaṃ gacchāmi.’</p>
+<p><em>Laypeople</em>: repeat line by line.</p>
+<p><em>Bhk</em>: ‘Saraṇagamanaṃ sampuṇṇaṃ.’</p>
+<p><em>Laypeople</em>: ‘Āma, bhante.’</p>
+<p>Then the bhikkhu recites, with the laypeople repeating line by line:</p>
+<ol>
+<li>Pāṇātipātā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+<li>Adinnādānā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+<li>Abrahma-cariyā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+<li>Musāvādā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+<li>Surā-meraya-majja-pamādaṭṭhānā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+<li>Vikāla-bhojanā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+<li>Nacca-gīta vādita visūka-dassana mālāgandha vilepana dhāraṇa maṇḍana vibhūsanaṭṭhānā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+<li>Uccā-sayana mahā-sayanā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+</ol>
+<p><em>A.IV.248–250</em></p>
+<p>I undertake the precept to refrain from:</p>
+<ol>
+<li>destroying living beings.</li>
+<li>taking that which is not given.</li>
+<li>any kind of intentional sexual behaviour.</li>
+<li>false speech.</li>
+<li>intoxicating drinks and drugs that lead to carelessness.</li>
+<li>eating at wrong times.</li>
+<li>dancing, singing, music and going to entertainments, perfumes, beautification and adornment.</li>
+<li>lying on a high or luxurious sleeping place.</li>
+</ol>
+<p><em>Bhk</em>: ‘Imaṃ aṭṭh’aṅga-sīlaṃ samādiyāmi.’</p>
+<p><em>Laypeople</em>: ‘Imaṃ aṭṭh’aṅga-sīlaṃ samādiyāmi.’ (×3)</p>
+<p><em>Bhk</em>: ‘Ti-saraṇena saddhiṃ aṭṭh’aṅga-sīlaṃ dhammaṃ sādhukaṃ surakkhitaṃ katvā appamādena sampādetha.’</p>
+<p><em>Laypeople</em>: ‘Āma, bhante.’</p>
+<p><em>Bhk</em>:</p>
+<p>‘Sīlena sugatiṃ yanti,<br />
+Sīlena bhoga-sampadā,<br />
+Sīlena nibbutiṃ yanti,<br />
+Tasmā sīlaṃ visodhaye.’</p>
+<blockquote>
+<p>‘These Eight Precepts<br />
+Have morality as a vehicle for happiness,<br />
+Have morality as a vehicle for good fortune,<br />
+Have morality as a vehicle for liberation,<br />
+Let morality therefore be purified.’</p>
+</blockquote>
+<p>The Laypeople may respond with:</p>
+<p>‘Sādhu, sādhu, sādhu!’</p>
+<h3 id="five-precepts"><a class="header" href="#five-precepts">Five Precepts<a id="five-precepts"></a></a></h3>
+<p>With hands in <em>añjali</em>, the laypeople recite the following request:</p>
+<p>‘Sādhu! Sādhu! Sādhu! Okāsa ahaṃ bhante tisaraṇena saddhiṃ pañca-sīlaṃ
+dhammaṃ yācāmi, anuggahaṃ katvā sīlaṃ detha me bhante. Dutiyam-pi
+okāsa… Tatiyam-pi okāsa…’</p>
+<p><em>Bhikkhu</em>: ‘Yaṃ ahaṃ vadāmi taṃ vadetha.’</p>
+<p><em>Laypeople</em>: ‘Āma, bhante.’</p>
+<p><em>Bhk</em>: ‘Namo…’ (×3)</p>
+<p><em>Laypeople</em>: repeat.</p>
+<p><em>Bhk</em>: ‘Saraṇagamanaṃ sampuṇṇaṃ.’</p>
+<p><em>Laypeople</em>: ‘Āma, bhante.’</p>
+<p>Then the bhikkhu recites, with the laypeople repeating line by line:</p>
+<ol>
+<li>Pāṇātipātā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+<li>Adinnādānā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+<li>Kāmesu micchā-cārā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+<li>Musā-vādā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+<li>Surā-meraya-majja-pamādaṭṭhānā veramaṇī sikkhā-padaṃ samādiyāmi.</li>
+</ol>
+<p><em>Bhk</em>:</p>
+<p>‘Tisaraṇena saddhiṃ pañcasīlaṃ dhammaṃ sādhukaṃ surakkhitaṃ katvā appamādena
+sampādetha.’</p>
+<p><em>Laypeople</em>: ‘Āma, bhante.’</p>
+<p><em>Bhk</em>:</p>
+<p>‘Sīlena sugatiṃ yanti<br />
+Sīlena bhoga-sampadā,<br />
+Sīlena nibbutiṃ yanti,<br />
+Tasmā sīlaṃ visodhaye.’</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../chants/patimokkha-chants.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../vinaya-notes.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../chants/patimokkha-chants.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../vinaya-notes.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
